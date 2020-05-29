@@ -1,0 +1,45 @@
+@tailwind base;
+
+body {
+  @apply font-serif;
+  @apply bg-martinique;
+  @apply text-pale-chestnut;
+  @apply antialiased;
+}
+h1 {
+  @apply text-4xl;
+}
+h2 {
+  @apply text-3xl;
+}
+h3 {
+  @apply text-2xl;
+}
+p {
+  @apply text-lg;
+}
+a {
+  @apply text-pale-chestnut;
+  @apply transition-all;
+  @apply ease-in-out;
+  @apply duration-150;
+}
+
+a:hover {
+  @apply text-mountbatten-pink;
+  @apply underline;
+}
+
+a:active {
+  @apply text-mountbatten-pink;
+  @apply underline;
+}
+
+a:focus {
+  @apply outline-none;
+  @apply text-mountbatten-pink;
+  @apply underline;
+}
+
+@tailwind components;
+@tailwind utilities;
