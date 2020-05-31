@@ -1,44 +1,83 @@
 @tailwind base;
 
 body {
-  @apply font-serif;
-  @apply bg-martinique;
-  @apply text-pale-chestnut;
-  @apply antialiased;
+  @apply font-serif bg-martinique text-pale-chestnut antialiased;
+  height: 100vh;
+  background-color: #3a3747;
+  background-image: linear-gradient(-70deg, #23212d, #3a3747);
+  background-attachment: fixed;
 }
-h1 {
-  @apply text-4xl;
-}
-h2 {
-  @apply text-3xl;
-}
-h3 {
-  @apply text-2xl;
-}
-p {
-  @apply text-lg;
+header, main, footer {
+  @apply mx-auto p-8;
 }
 a {
-  @apply text-pale-chestnut;
-  @apply transition-all;
-  @apply ease-in-out;
-  @apply duration-150;
+  @apply underline transform transition-all ease-in-out duration-150;
 }
-
+h1 {
+  @apply text-4xl tracking-tight;
+}
+h2 {
+  @apply text-3xl my-12;
+}
+h3 {
+  @apply text-2xl my-4;
+}
+h1 a, h2 a, h3 a, header a, footer a {
+  @apply text-pale-chestnut no-underline;
+}
+li { @apply tracking-wide; }
 a:hover {
-  @apply text-mountbatten-pink;
-  @apply underline;
+  @apply text-fantasy underline;
 }
-
 a:active {
-  @apply text-mountbatten-pink;
-  @apply underline;
+  @apply text-fantasy outline-none underline translate-y-1;
 }
-
 a:focus {
+  @apply outline-none text-fantasy underline;
+}
+a.preview { @apply py-2 no-underline;}
+a.preview span {
+  @apply pl-2 text-xs
+}
+.social a {
+  @apply mr-6 text-pale-chestnut;
+}
+.social a:hover {
+  @apply text-fantasy;
+}
+.social a:focus {
   @apply outline-none;
-  @apply text-mountbatten-pink;
-  @apply underline;
+}
+.social a:active {
+  @apply outline-none translate-y-1;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, header a:hover, footer a:hover {
+  @apply no-underline;
+}
+h1 a:focus, h2 a:focus, h3 a:focus, header a:focus, footer a:focus {
+  @apply no-underline;
+}
+.social a:last-child {
+  @apply mr-0;
+}
+p {
+  @apply mb-6 text-xl tracking-wide;
+}
+footer p {
+  @apply text-sm tracking-wide py-1;
+}
+.hero {
+  min-height: 45vh;
+}
+.skills li:before {
+  content: "»";
+  @apply -ml-4 mr-2 text-mountbatten-pink;
+}
+.project h3 {
+  @apply text-xl leading-tight;
+}
+.tags li {
+  @apply pr-3 pb-3 text-xs text-mountbatten-pink;
 }
 
 @tailwind components;
