@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.tsx'],
   theme: {
     fontFamily: {
       serif: ['Lora', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
