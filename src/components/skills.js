@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Skills = () => (
-  <section className="py-8">
+  <section className="py-8 max-w-screen-lg">
     <h2>Skills</h2>
     <h3>Technologies &amp; Tools</h3>
     <ul className="skills grid grid-cols-2 gap-6 row-gap-4 list-outside ml-4 pb-8">
