@@ -1,5 +1,4 @@
 import React from 'react'
-import '../src/css/tailwind.css'
 
 import Projects from '../src/components/projects'
 

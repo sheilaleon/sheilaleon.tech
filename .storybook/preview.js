@@ -1,5 +1,6 @@
 import { action } from "@storybook/addon-actions"
 import 'typeface-lora'
+import '../src/css/tailwind.css'
 
 import { addParameters } from '@storybook/react';
 import { addDecorator } from '@storybook/react';
