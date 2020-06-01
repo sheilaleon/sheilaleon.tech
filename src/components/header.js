@@ -4,7 +4,9 @@ import React, { useState } from 'react'
 
 const Header = ({ title }) => (
   <header className="container relative flex items-center justify-between">
-    <span className="text-2xl">{title}</span>
+    <Link to="/" className="text-2xl">
+      {title}
+    </Link>
     {/* <Link to="/" className="text-2xl">
       Sheila Leon
     </Link>
