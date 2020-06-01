@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Sheila Leon`,
     author: {
-      name: `Sheila Leon`,
+      name: `Sheila L.`,
       summary: `an IT professional based out of Sydney, Australia.`,
     },
     description: `Blog, Portfolio and what she's up to`,
@@ -15,17 +15,17 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content`,
-        name: `content`,
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/content/assets`,
-    //     name: `assets`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/assets`,
+        name: `assets`,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -43,12 +43,12 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-emojis',
+            resolve: `gatsby-remark-emojis`,
             options: {
               // Deactivate the plugin globally (default: true)
               active: true,
               // Add a custom css class
-              class: 'emoji-icon',
+              class: `emoji-icon`,
               // In order to avoid pattern mismatch you can specify
               // an escape character which will be prepended to the
               // actual pattern (e.g. `#:poop:`).
@@ -70,6 +70,13 @@ module.exports = {
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-simple-analytics`,
+      options: {
+        // Optional custom domain
+        domain: `***REMOVED***`,
       },
     },
     `gatsby-transformer-sharp`,

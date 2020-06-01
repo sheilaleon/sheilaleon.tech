@@ -4,10 +4,9 @@ import { PageProps, Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from '../components/hero'
+import Hero from "../components/hero"
 import Skills from "../components/skills"
 import Projects from "../components/projects"
-import About from '../components/about'
 
 type Data = {
   site: {
