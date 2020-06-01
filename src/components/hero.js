@@ -11,16 +11,16 @@ const Hero = () => (
       UI/UX Designer, self-taught Frontend Developer &amp; Product Manager based out of Sydney, Australia.
     </h1>
     <div className="social flex items-center justify-start mb-16">
-      <a href="https://github.com/sheilaleon" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/sheilaleon" title="GitHub" target="_blank" rel="noopener noreferrer">
         <GitHubIcon />
       </a>
-      <a href="https://linkedin.com/in/sheilaleon" target="_blank" rel="noopener noreferrer">
+      <a href="https://linkedin.com/in/sheilaleon" title="LinkedIn" target="_blank" rel="noopener noreferrer">
         <LinkedinIcon />
       </a>
-      <a href="https://instagram.com/sheilaleon_" target="_blank" rel="noopener noreferrer">
+      <a href="https://instagram.com/sheilaleon_" title="Instagram" target="_blank" rel="noopener noreferrer">
         <InstagramIcon />
       </a>
-      <a href="https://twitter.com/kan" target="_blank" rel="noopener noreferrer">
+      <a href="https://twitter.com/kan" title="Twitter" target="_blank" rel="noopener noreferrer">
         <TwitterIcon />
       </a>
     </div>

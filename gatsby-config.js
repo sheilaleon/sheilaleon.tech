@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Sheila Leon`,
     author: {
-      name: `Sheila Leon`,
-      summary: `A person who likes to wear lots of hats, yet has a very physically small head`,
+      name: `Sheila L.`,
+      summary: `an IT professional based out of Sydney, Australia.`,
     },
     description: `Blog, Portfolio and what she's up to`,
     siteUrl: `https:/sheilaleon.tech`,
@@ -15,17 +15,17 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content`,
-        name: `content`,
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/content/assets`,
-    //     name: `assets`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/assets`,
+        name: `assets`,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -43,12 +43,12 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-emojis',
+            resolve: `gatsby-remark-emojis`,
             options: {
               // Deactivate the plugin globally (default: true)
               active: true,
               // Add a custom css class
-              class: 'emoji-icon',
+              class: `emoji-icon`,
               // In order to avoid pattern mismatch you can specify
               // an escape character which will be prepended to the
               // actual pattern (e.g. `#:poop:`).
@@ -72,6 +72,13 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-simple-analytics`,
+      options: {
+        // Optional custom domain
+        domain: `sa.sheilaleon.tech`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-feed`,
@@ -85,7 +92,7 @@ module.exports = {
         background_color: `#3a3747`,
         theme_color: `#dea5a3`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon.svg`,
       },
     },
     `gatsby-plugin-react-helmet`,
