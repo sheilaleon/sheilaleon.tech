@@ -3,7 +3,7 @@ module.exports = {
     title: `Sheila Leon`,
     author: {
       name: `Sheila Leon`,
-      summary: `A person who likes to wear lots of hats, yet has a very physically small head`,
+      summary: `an IT professional based out of Sydney, Australia.`,
     },
     description: `Blog, Portfolio and what she's up to`,
     siteUrl: `https:/sheilaleon.tech`,
@@ -85,7 +85,7 @@ module.exports = {
         background_color: `#3a3747`,
         theme_color: `#dea5a3`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon.svg`,
       },
     },
     `gatsby-plugin-react-helmet`,

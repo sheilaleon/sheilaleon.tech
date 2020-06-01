@@ -41,7 +41,7 @@ const Index = ({ data, location }: PageProps<Data>) => {
     <Layout title={siteTitle}>
       <SEO title={siteTitle} description={description} />
       <Hero />
-      <section className="py-8 ">
+      <section className="py-8 max-w-screen-lg">
         <p>🖖🏼 Hello, I'm Sheila!</p>
         <p>I specialise in user interfaces, customer experience, visual design and product strategy.</p>
         <p>Currently, I am making the career transition to a full stack developer as part of my “always learning” commitment to myself.</p>
