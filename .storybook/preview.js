@@ -1,6 +1,21 @@
 import { action } from "@storybook/addon-actions"
 import 'typeface-lora'
 
+import { addParameters } from '@storybook/react';
+import { addDecorator } from '@storybook/react';
+import { withPaddings } from 'storybook-addon-paddings';
+
+// Padding Addon
+addDecorator(withPaddings);
+
+addParameters({
+  paddings: [
+    { name: 'Small', value: '16px' },
+    { name: 'Medium', value: '32px', default: true },
+    { name: 'Large', value: '64px' },
+  ],
+});
+
 // Gatsby's Link overrides:
 // Gatsby Link calls the `enqueue` & `hovering` methods on the global variable ___loader.
 // This global object isn't set in storybook context, requiring you to override it to empty functions (no-op),

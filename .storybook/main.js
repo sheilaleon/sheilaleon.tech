@@ -1,6 +1,6 @@
 module.exports = {
   stories: ['../stories/**/*.stories.js',"../stories/**/*.stories.tsx"],
-  addons: ['@storybook/addon-actions', '@storybook/addon-links'],
+  addons: ['@storybook/addon-actions', '@storybook/addon-links', 'storybook-addon-paddings'],
   webpackFinal: async config => {
     // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
     config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/]
