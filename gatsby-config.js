@@ -3,10 +3,11 @@ module.exports = {
     title: `Sheila Leon`,
     author: {
       name: `Sheila L.`,
-      summary: `an IT professional based out of Sydney, Australia.`,
+      summary: `Designer, Frontend Developer, Product Manager, wearer of many hats`,
     },
-    description: `Blog, Portfolio and what she's up to`,
-    siteUrl: `https:/sheilaleon.tech`,
+    description: `Designer, Frontend Developer & Product Manager`,
+    siteUrl: `https://sheilaleon.tech`,
+    twitterUsername: `@kan`,
     social: {
       twitter: `kan`,
     },
@@ -15,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content`,
+        name: `content`,
       },
     },
     {
@@ -79,10 +80,21 @@ module.exports = {
         domain: `***REMOVED***`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-sentry',
+      options: {
+        dsn: '***REMOVED***',
+        // Optional settings, see https://docs.sentry.io/clients/node/config/#optional-settings
+        environment: process.env.NODE_ENV,
+        enabled: (() => ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)(),
+        attachStacktrace: true,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-feed`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -96,12 +108,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: `gatsby-plugin-typography`,
-    //   options: {
-    //     pathToConfigModule: `src/utils/typography`,
-    //   },
-    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
