@@ -31,9 +31,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
-    "typeface-lora": "^0.0.72",
-    "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typeface-lora": "^0.0.72"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -44,7 +42,7 @@
     "babel-eslint": "^9.0.0",
     "babel-loader": "^8.1.0",
     "babel-preset-react-app": "^9.1.2",
-    "eslint": "^5.14.1",
+    "eslint": "^7.1.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-config-wesbos": "0.0.19",

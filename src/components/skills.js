@@ -19,7 +19,7 @@ const Skills = () => (
     <h3>Industry Knowledge</h3>
     <ul className="skills grid grid-cols-2 gap-6 row-gap-4 list-outside ml-4 pb-8">
       <li>UI/UX Design</li>
-      <li>Wireframing &amp;Prototyping</li>
+      <li>Wireframing &amp; Prototyping</li>
       <li>User Journeys &amp; Personas</li>
       <li>AB/Multivariate Testing</li>
       <li>Product Roadmaps</li>
