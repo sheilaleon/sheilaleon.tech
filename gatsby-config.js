@@ -6,7 +6,7 @@ module.exports = {
       summary: `Designer, Frontend Developer, Product Manager, wearer of many hats`,
     },
     description: `Designer, Frontend Developer & Product Manager`,
-    siteUrl: `https:/sheilaleon.tech`,
+    siteUrl: `https://sheilaleon.tech`,
     twitterUsername: `@kan`,
     social: {
       twitter: `kan`,
@@ -16,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content`,
+        name: `content`,
       },
     },
     {
@@ -94,6 +94,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-feed`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
