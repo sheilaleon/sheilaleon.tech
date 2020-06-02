@@ -80,6 +80,16 @@ module.exports = {
         domain: `***REMOVED***`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-sentry',
+      options: {
+        dsn: '***REMOVED***',
+        // Optional settings, see https://docs.sentry.io/clients/node/config/#optional-settings
+        environment: process.env.NODE_ENV,
+        enabled: (() => ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)(),
+        attachStacktrace: true,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-feed`,
