@@ -1,12 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: `Sheila Leon`,
+    titleTemplate: `Designer, Frontend Developer, Product Manager`,
     author: {
       name: `Sheila L.`,
       summary: `Designer, Frontend Developer, Product Manager, wearer of many hats`,
     },
     description: `Designer, Frontend Developer & Product Manager`,
     siteUrl: `https://sheilaleon.tech`,
+    image: `/sheilaleon.png`,
     twitterUsername: `@kan`,
     social: {
       twitter: `kan`,
@@ -70,6 +72,20 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_blank',
+              rel: 'nofollow noopener noreferrer',
+            },
+          },
         ],
       },
     },
