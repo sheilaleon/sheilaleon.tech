@@ -8,7 +8,7 @@ module.exports = {
     },
     description: `Designer, Frontend Developer & Product Manager`,
     siteUrl: `https://sheilaleon.tech`,
-    image: `/content/assets/sheilaleon.png`,
+    image: `/sheilaleon.png`,
     twitterUsername: `@kan`,
     social: {
       twitter: `kan`,
