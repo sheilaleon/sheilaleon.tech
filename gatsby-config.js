@@ -3,10 +3,11 @@ module.exports = {
     title: `Sheila Leon`,
     author: {
       name: `Sheila L.`,
-      summary: `an IT professional based out of Sydney, Australia.`,
+      summary: `Designer, Frontend Developer, Product Manager, wearer of many hats`,
     },
-    description: `Blog, Portfolio and what she's up to`,
+    description: `Designer, Frontend Developer & Product Manager`,
     siteUrl: `https:/sheilaleon.tech`,
+    twitterUsername: `@kan`,
     social: {
       twitter: `kan`,
     },
@@ -96,12 +97,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: `gatsby-plugin-typography`,
-    //   options: {
-    //     pathToConfigModule: `src/utils/typography`,
-    //   },
-    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
