@@ -6,11 +6,9 @@ import InstagramIcon from './icons/instagram'
 import TwitterIcon from './icons/twitter'
 
 const Hero = () => (
-  <section className="hero max-w-screen-lg flex flex-col justify-center">
-    <h1 className="my-16">
-      UI/UX Designer, self-taught Frontend Developer &amp; Product Manager based out of Sydney, Australia.
-    </h1>
-    <div className="social flex items-center justify-start mb-16">
+  <section className="hero">
+    <h1>UI/UX Designer, Product Manager &amp; self-taught Frontend Developer based out of Sydney, Australia.</h1>
+    <div className="social">
       <a href="https://github.com/sheilaleon" title="GitHub" target="_blank" rel="noopener noreferrer">
         <GitHubIcon />
       </a>

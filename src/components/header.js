@@ -1,12 +1,12 @@
-import { Link } from 'gatsby';
-import React from 'react';
+import { Link } from 'gatsby'
+import React from 'react'
 
 const Header = ({ title }) => (
-  <header className="container relative flex items-center justify-between">
-    <Link to="/" className="text-2xl">
+  <header className="container">
+    <Link to="/" className="logo">
       {title}
     </Link>
   </header>
-);
+)
 
-export default Header;
+export default Header

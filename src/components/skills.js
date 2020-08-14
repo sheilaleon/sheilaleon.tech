@@ -1,10 +1,10 @@
 import React from 'react'
 
 const Skills = () => (
-  <section className="py-8 max-w-screen-lg">
+  <section className="section">
     <h2>Skills</h2>
     <h3>Technologies &amp; Tools</h3>
-    <ul className="skills grid grid-cols-2 gap-6 row-gap-4 list-outside ml-4 pb-8">
+    <ul className="skills">
       <li>HTML/CSS</li>
       <li>JavaScript</li>
       <li>Git</li>
@@ -17,7 +17,7 @@ const Skills = () => (
       <li>Office 365</li>
     </ul>
     <h3>Industry Knowledge</h3>
-    <ul className="skills grid grid-cols-2 gap-6 row-gap-4 list-outside ml-4 pb-8">
+    <ul className="skills">
       <li>UI/UX Design</li>
       <li>Wireframing &amp; Prototyping</li>
       <li>User Journeys &amp; Personas</li>
