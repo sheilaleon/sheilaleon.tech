@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Sheila Leon`,
-    titleTemplate: `Designer, Frontend Developer, Product Manager`,
+    titleTemplate: `Designer, Frontend Developer, Product Manager, wearer of many hats`,
     author: {
       name: `Sheila L.`,
       summary: `Designer, Frontend Developer, Product Manager, wearer of many hats`,
     },
-    description: `Designer, Frontend Developer & Product Manager`,
+    description: `Designer, Frontend Developer, Product Manager, wearer of many hats`,
     siteUrl: `https://sheilaleon.tech`,
     image: `/sheilaleon.png`,
     twitterUsername: `@kan`,
