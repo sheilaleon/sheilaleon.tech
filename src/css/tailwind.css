@@ -7,14 +7,22 @@ body {
   background-image: linear-gradient(-70deg, #23212d, #3a3747);
   background-attachment: fixed;
 }
-header, main, footer {
+header,
+main,
+footer {
   @apply mx-auto p-8;
+}
+header {
+  @apply relative flex items-center justify-between;
+}
+.section {
+  @apply py-8 max-w-screen-lg;
 }
 a {
   @apply underline transform transition-all ease-in-out duration-150;
 }
 h1 {
-  @apply text-4xl tracking-tight;
+  @apply text-4xl tracking-tight my-16;
 }
 h2 {
   @apply text-3xl my-12;
@@ -22,7 +30,11 @@ h2 {
 h3 {
   @apply text-2xl my-4;
 }
-h1 a, h2 a, h3 a, header a, footer a {
+h1 a,
+h2 a,
+h3 a,
+header a,
+footer a {
   @apply text-pale-chestnut no-underline;
 }
 a:hover {
@@ -34,12 +46,26 @@ a:active {
 a:focus {
   @apply outline-none text-fantasy underline;
 }
-a.preview { @apply ml-8 my-4 no-underline;}
-a.preview:first-child {
+.logo {
+  @apply text-2xl;
+}
+.preview {
+  @apply flex items-center;
+}
+a.preview-link {
+  @apply ml-8 my-4 no-underline;
+}
+a.preview-link:first-child {
   @apply ml-0;
 }
-a.preview span {
-  @apply pl-2 text-xs
+a.preview-link span {
+  @apply pl-2 text-xs;
+}
+.preview-icon {
+  @apply w-12;
+}
+.social {
+  @apply flex items-center justify-start mb-16;
 }
 .social a {
   @apply mr-6 text-pale-chestnut;
@@ -53,10 +79,18 @@ a.preview span {
 .social a:active {
   @apply outline-none translate-y-1;
 }
-h1 a:hover, h2 a:hover, h3 a:hover, header a:hover, footer a:hover {
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+header a:hover,
+footer a:hover {
   @apply no-underline;
 }
-h1 a:focus, h2 a:focus, h3 a:focus, header a:focus, footer a:focus {
+h1 a:focus,
+h2 a:focus,
+h3 a:focus,
+header a:focus,
+footer a:focus {
   @apply no-underline;
 }
 .social a:last-child {
@@ -69,18 +103,35 @@ footer p {
   @apply text-sm py-1;
 }
 .hero {
+  @apply max-w-screen-lg flex flex-col justify-center;
   min-height: 45vh;
 }
+.skills {
+  @apply grid grid-cols-2 gap-6 row-gap-4 list-outside ml-4 pb-8;
+}
 .skills li:before {
-  content: "»";
+  content: '»';
   @apply -ml-4 mr-2 text-mountbatten-pink;
+}
+.project-list {
+  @apply grid gap-2 row-gap-16;
+}
+.project {
+  @apply pr-16;
 }
 .project h3 {
   @apply text-xl leading-tight;
 }
+.tags {
+  @apply flex flex-wrap items-center;
+}
 .tags li {
   @apply pr-3 pb-1 text-xs text-mountbatten-pink;
 }
-
+@screen md {
+  .project-list {
+    @apply grid-cols-2;
+  }
+}
 @tailwind components;
 @tailwind utilities;
