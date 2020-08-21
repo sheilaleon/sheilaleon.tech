@@ -5,8 +5,8 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -30,16 +30,16 @@ const Bio = () => {
         }
       }
     }
-  `)
+  `);
 
-  const { author, social } = data.site.siteMetadata
+  const { author, social } = data.site.siteMetadata;
   return (
     <div>
       <p>
         Written by <strong>{author.name}</strong>, {author.summary}
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Bio
+export default Bio;

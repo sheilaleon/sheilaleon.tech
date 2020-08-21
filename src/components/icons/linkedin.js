@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const LinkedinIcon = () => (
   <svg
@@ -14,6 +14,6 @@ const LinkedinIcon = () => (
       fill=""
     />
   </svg>
-)
+);
 
-export default LinkedinIcon
+export default LinkedinIcon;

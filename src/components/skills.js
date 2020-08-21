@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Skills = () => (
   <section className="section">
@@ -29,6 +29,6 @@ const Skills = () => (
       <li>Email Delivery &amp; Marketing</li>
     </ul>
   </section>
-)
+);
 
-export default Skills
+export default Skills;
