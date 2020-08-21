@@ -121,14 +121,14 @@ footer p {
   min-height: 45vh;
 }
 .skills {
-  @apply grid grid-cols-2 gap-6 row-gap-4 list-outside ml-4 pb-8;
+  @apply grid grid-cols-2 gap-6 gap-x-4 list-outside ml-4 pb-8;
 }
 .skills li:before {
   content: '»';
   @apply -ml-4 mr-2 text-mountbatten-pink;
 }
 .project-list {
-  @apply grid gap-2 row-gap-16;
+  @apply grid gap-2 gap-y-16;
 }
 .project {
   @apply pr-16;

@@ -3,7 +3,7 @@ import React from 'react'
 
 const Header = ({ title }) => (
   <header className="container">
-    <Link to="/" className="logo">
+    <Link to="/" className="logo" title={`Home - ${title}`}>
       <svg className="mr-2" width="28" height="28" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="250" cy="250" r="250" fill="#EBBAB8" />
         <path

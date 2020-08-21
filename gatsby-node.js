@@ -1,3 +1,4 @@
+/* eslint-disable */
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
@@ -8,7 +9,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(
     `
       {
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
+        allMarkdownRemark(limit: 1000, filter: {fileAbsolutePath: {regex: "\/blog/"}}, sort: {fields: frontmatter___date, order: DESC}) {
           edges {
             node {
               fields {
