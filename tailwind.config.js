@@ -2,7 +2,14 @@ module.exports = {
   purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.tsx'],
   theme: {
     fontFamily: {
-      serif: ['Lora', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      serif: [
+        'Lora',
+        'Georgia',
+        'Cambria',
+        '"Times New Roman"',
+        'Times',
+        'serif',
+      ],
     },
     extend: {
       colors: {
@@ -18,11 +25,14 @@ module.exports = {
       listStyleType: {
         square: 'square',
       },
+      boxShadow: {
+        outline: '0 0 0 2px rgba(234, 213, 212, 0.80)',
+      },
     },
   },
   variants: {},
   plugins: [],
   future: {
     removeDeprecatedGapUtilities: true,
-  }
-}
+  },
+};

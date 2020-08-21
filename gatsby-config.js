@@ -102,7 +102,8 @@ module.exports = {
         dsn: '***REMOVED***',
         // Optional settings, see https://docs.sentry.io/clients/node/config/#optional-settings
         environment: process.env.NODE_ENV,
-        enabled: (() => ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)(),
+        enabled: (() =>
+          ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)(),
         attachStacktrace: true,
       },
     },
@@ -128,4 +129,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

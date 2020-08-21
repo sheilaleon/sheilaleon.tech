@@ -64,7 +64,7 @@ a:active {
   @apply text-fantasy outline-none underline translate-y-1;
 }
 a:focus {
-  @apply outline-none text-fantasy underline;
+  @apply outline-none shadow-outline;
 }
 a.preview-link {
   @apply ml-8 my-4 no-underline;
@@ -86,9 +86,6 @@ a.preview-link span {
 }
 .social a:hover {
   @apply text-fantasy;
-}
-.social a:focus {
-  @apply outline-none;
 }
 .social a:active {
   @apply outline-none translate-y-1;
@@ -134,7 +131,7 @@ footer p {
   @apply pr-16;
 }
 .project h3 {
-  @apply text-xl leading-tight;
+  @apply text-xl;
 }
 .tags {
   @apply flex flex-wrap items-center;
