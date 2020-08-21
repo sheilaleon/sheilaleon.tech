@@ -18,6 +18,9 @@ module.exports = {
       listStyleType: {
         square: 'square',
       },
+      boxShadow: {
+        outline: '0 0 0 2px rgba(234, 213, 212, 0.80)',
+      }
     },
   },
   variants: {},
