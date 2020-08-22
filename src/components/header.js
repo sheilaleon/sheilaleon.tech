@@ -5,7 +5,6 @@ const Header = ({ title }) => (
   <header>
     <Link to="/" className="logo" title={`Home - ${title}`}>
       <svg
-        className="mr-2"
         width="28"
         height="28"
         viewBox="0 0 500 500"
@@ -23,16 +22,16 @@ const Header = ({ title }) => (
     <nav className="nav">
       <ul className="flex justify-end">
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about/">About</Link>
         </li>
         <li>
-          <Link to="/blog">Blog</Link>
+          <Link to="/blog/">Blog</Link>
         </li>
         <li>
-          <Link to="/digital-garden">Garden</Link>
+          <Link to="/digital-garden/">Garden</Link>
         </li>
         <li>
-          <Link to="/uses">Uses</Link>
+          <Link to="/uses/">Uses</Link>
         </li>
       </ul>
     </nav>
