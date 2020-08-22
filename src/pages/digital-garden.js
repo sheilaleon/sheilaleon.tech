@@ -5,7 +5,7 @@ import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const BlogIndex = ({ data, location }) => {
+const GardenIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
 
@@ -19,7 +19,7 @@ const BlogIndex = ({ data, location }) => {
           <article key={node.fields.slug}>
             <header>
               <h3>
-                <Link to={`/blog${node.fields.slug}`}>{title}</Link>
+                <Link to={`/digital-garden${node.fields.slug}`}>{title}</Link>
               </h3>
               <small>{node.frontmatter.date}</small>
             </header>
@@ -37,7 +37,7 @@ const BlogIndex = ({ data, location }) => {
   );
 };
 
-export default BlogIndex;
+export default GardenIndex;
 
 export const pageQuery = graphql`
   query {
@@ -47,7 +47,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/blog/" } }
+      filter: { fileAbsolutePath: { regex: "/digital-garden/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -62,6 +62,7 @@ export const pageQuery = graphql`
             description
             category
             posttype
+            tags
           }
         }
       }

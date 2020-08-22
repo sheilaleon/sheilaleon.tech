@@ -18,8 +18,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content`,
-        name: `content`,
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/digital-garden`,
+        name: `garden`,
       },
     },
     {
@@ -109,7 +116,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-feed`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-sitemap`,
     {
