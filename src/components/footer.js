@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Footer = () => (
-  <footer className="container">
+  <footer>
     <p>
       Built with ♥ using{' '}
       <a href="https://gatsbyjs.org/" target="_blank" rel="noopener noreferrer">

@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Skills = () => (
-  <section className="section">
+  <section className="skills">
     <h2>Skills</h2>
     <h3>Technologies &amp; Tools</h3>
-    <ul className="skills">
+    <ul className="skill-list">
       <li>HTML/CSS</li>
       <li>JavaScript</li>
       <li>Git</li>
@@ -17,7 +17,7 @@ const Skills = () => (
       <li>Office 365</li>
     </ul>
     <h3>Industry Knowledge</h3>
-    <ul className="skills">
+    <ul className="skill-list">
       <li>UI/UX Design</li>
       <li>Wireframing &amp; Prototyping</li>
       <li>User Journeys &amp; Personas</li>
