@@ -22,7 +22,7 @@ section {
   @apply flex items-center;
 }
 .logo span {
-  @apply hidden  text-2xl whitespace-no-wrap;
+  @apply hidden ml-2 text-2xl whitespace-no-wrap;
 }
 .nav,
 .preview {
@@ -63,7 +63,7 @@ a:hover {
   @apply text-fantasy underline;
 }
 a:active {
-  @apply text-fantasy outline-none underline translate-y-1;
+  @apply text-fantasy outline-none underline;
 }
 a:focus {
   @apply outline-none shadow-outline;
@@ -88,9 +88,6 @@ a.preview-link span {
 }
 .social a:hover {
   @apply text-fantasy;
-}
-.social a:active {
-  @apply outline-none translate-y-1;
 }
 h1 a:hover,
 h2 a:hover,
