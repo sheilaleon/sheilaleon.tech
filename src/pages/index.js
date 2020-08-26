@@ -13,7 +13,7 @@ const Index = ({ data, location }) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO title={siteTitle} description={description} />
+      <SEO title={`${siteTitle} - ${description}`} description={description} />
       <Hero />
       <section>
         <p>👋🏽 Hello, I'm Sheila!</p>

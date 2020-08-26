@@ -149,11 +149,14 @@ footer p {
 .tags li {
   @apply pr-3 pb-1 text-xs text-mountbatten-pink;
 }
+th {
+  font-weight: 400;
+}
 @screen md {
   header,
   main,
   footer {
-    @apply px-16 py-16;
+    @apply px-16 py-16 max-w-screen-lg;
   }
   header {
     @apply items-center;
@@ -178,6 +181,14 @@ footer p {
   }
   .nav a {
     @apply px-4 text-lg;
+  }
+  /* .prose tbody td:first-child {
+    @apply w-64 text-red-500;
+  } */
+}
+@screen lg {
+  h1 {
+    @apply text-5xl;
   }
 }
 @tailwind components;

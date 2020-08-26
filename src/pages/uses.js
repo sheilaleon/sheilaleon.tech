@@ -1,30 +1,47 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const usesPage = ({ data, location }) => {
+const Uses = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title;
   const { description } = data.site.siteMetadata;
 
   return (
     <Layout title={siteTitle}>
       <SEO title={siteTitle} description={description} />
-      <h1>Uses</h1>
-      <p>Hola!</p>
+      <section
+        className="prose lg:prose-xl"
+        dangerouslySetInnerHTML={{
+          __html: data.usesJson.content.childMarkdownRemark.html,
+        }}
+      />
     </Layout>
   );
 };
 
-export default usesPage;
+Uses.propTypes = {
+  data: PropTypes.object.isRequired,
+};
 
-export const pageQuery = graphql`
-  query {
+export default Uses;
+
+export const query = graphql`
+  query UsesQuery {
     site {
       siteMetadata {
         description
         title
+      }
+    }
+    usesJson {
+      title
+      content {
+        childMarkdownRemark {
+          html
+        }
       }
     }
   }

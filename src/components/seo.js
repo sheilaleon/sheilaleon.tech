@@ -30,7 +30,7 @@ const SEO = ({ title, description, image, article, lang }) => {
         lang,
       }}
       title={seo.title}
-      titleTemplate={titleTemplate}
+      titleTemplate={`${seo.title} - ${titleTemplate}`}
     >
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
