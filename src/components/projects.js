@@ -4,10 +4,10 @@ import GitHubLinkIcon from './icons/github-link';
 import ExternalLinkIcon from './icons/external-link';
 
 const Projects = () => (
-  <section>
+  <section id="projects">
     <h2>Projects</h2>
     <div className="project-list">
-      <div className="project">
+      <div className="project" id="project-tile">
         <h3>
           <a
             href="https://recreate-kickstarter-recommendations.now.sh/"

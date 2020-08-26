@@ -19,16 +19,16 @@ const Header = ({ title }) => (
       </svg>{' '}
       <span>{title}</span>
     </Link>
-    <nav className="nav">
+    <nav className="nav" id="navbar">
       <ul className="flex justify-end">
         <li>
           <Link to="/about/">About</Link>
         </li>
         <li>
-          <Link to="/blog/">Blog</Link>
+          <Link to="/digital-garden/">Garden</Link>
         </li>
         <li>
-          <Link to="/digital-garden/">Garden</Link>
+          <Link to="/now/">Now</Link>
         </li>
         <li>
           <Link to="/uses/">Uses</Link>

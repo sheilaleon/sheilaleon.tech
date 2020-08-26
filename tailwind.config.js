@@ -11,6 +11,47 @@ module.exports = {
         'serif',
       ],
     },
+    typography: {
+      default: {
+        css: {
+          color: 'text-pale-chestnut',
+          a: {
+            color: 'text-pale-chestnut',
+            '&:hover': {
+              color: 'text-fantasy',
+            },
+          },
+          'ul > li': {
+            position: 'relative',
+          },
+          'ul > li::before': {
+            content: '""',
+            position: 'absolute',
+            backgroundColor: '#dea5a3',
+            borderRadius: '50%',
+          },
+          h1: {
+            color: 'text-mountbatten-pink',
+            fontWeight: '400',
+          },
+          h2: {
+            color: 'text-mountbatten-pink',
+            fontWeight: '400',
+          },
+          h3: {
+            color: 'text-mountbatten-pink',
+            fontWeight: '400',
+          },
+          h4: {
+            color: 'text-mountbatten-pink',
+            fontWeight: '400',
+          },
+          p: {
+            fontSize: '1rem',
+          },
+        },
+      },
+    },
     extend: {
       colors: {
         'black-russian': '#23212d',
@@ -31,7 +72,7 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
   future: {
     removeDeprecatedGapUtilities: true,
   },

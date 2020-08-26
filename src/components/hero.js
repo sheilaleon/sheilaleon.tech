@@ -6,7 +6,7 @@ import InstagramIcon from './icons/instagram';
 import TwitterIcon from './icons/twitter';
 
 const Hero = () => (
-  <section className="hero">
+  <section className="hero" id="welcome-section">
     <h1>
       UI/UX Designer, Product Manager &amp; self-taught Frontend Developer based
       out of Sydney, Australia.
@@ -17,6 +17,7 @@ const Hero = () => (
         title="GitHub"
         target="_blank"
         rel="noopener noreferrer"
+        id="profile-link"
       >
         <GitHubIcon />
       </a>
