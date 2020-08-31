@@ -2,10 +2,9 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 const Header = ({ title }) => (
-  <header className="container">
+  <header>
     <Link to="/" className="logo" title={`Home - ${title}`}>
       <svg
-        className="mr-2"
         width="28"
         height="28"
         viewBox="0 0 500 500"
@@ -20,6 +19,22 @@ const Header = ({ title }) => (
       </svg>{' '}
       <span>{title}</span>
     </Link>
+    <nav className="nav" id="navbar">
+      <ul className="flex justify-end">
+        <li>
+          <Link to="/about/">About</Link>
+        </li>
+        <li>
+          <Link to="/the-garden/">The Garden</Link>
+        </li>
+        <li>
+          <Link to="/now/">Now</Link>
+        </li>
+        <li>
+          <Link to="/uses/">Uses</Link>
+        </li>
+      </ul>
+    </nav>
   </header>
 );
 
