@@ -41,7 +41,7 @@ section {
   @apply text-sm;
 }
 a {
-  @apply underline transform transition-all ease-in-out duration-150;
+  @apply text-fantasy transform transition-all ease-in-out duration-150;
 }
 h1 {
   @apply text-4xl tracking-tight;

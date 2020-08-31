@@ -4,25 +4,60 @@ title: 'Now'
 description: 'What Sheila is currently up to right this minute'
 ---
 
-# Right _NOW_ I'm focusing on:
+# Now
 
-Sheila was born and raised in Pasadena, California. Being exposed to the creative arts and sciences at an early age, this has always guided her on the path to learn something new and be curious of how things work.
+Since I don't actively participate in social media, this is my way of sharing and documenting publicly what I've been up to.<br><span class="text-xs mt-0">Last updated 2020-08-26.</span>
 
-She currently lives in Sydney, Australia with her partner, 2 dogs and 3 cats. Sydney is now her home.
+## 🎯 Currently I'm focusing on:
 
-## Career
+- Staying safe and away from crowds first and foremost
+- Getting back into yoga daily again now that the days are not so cold temperature-wise
+- Journalling daily, use to be a chore, now a habit!
+- Hour of spending time in the sun daily to offset staying home
+- Working my way through freeCodeCamp's certifications to beat that imposter syndrome
+- A freelance Frontend Developer contract I just picked up. Super excited!
 
-She's worn many hats to propel her employer's business forward. Her hats include: customer service rep, a digital designer, a UI/UX designer, a product manager, and all-round glue worker. Her latest role was the Head of Engineering at Zanui.com.au, a pure-play online retail start up for the last four years.
+## 👩🏽‍🎓 Studying:
 
-Known as the "handywoman" amongst her friends and colleagues, her peers voted her to win back to back "The Duct Tape Award" and "The MacGyver Award" awards at Zanui for being able to fix just about anything.
+- JavaScript, React and Jest
+- Woodworking for framing
+- Resin and silicone casting for custom keycap creation
+- Gardening for the upcoming Spring season
 
-Currently, Sheila is working on obtaining a new hat as a self-taught full stack web developer by consuming as much educational content as possible. Jamstack has her much of interest right now.xw
+## 📚 Reading:
 
-## Personal
+- Dev.to feed
+- Starting the Discworld Series 😱
+- [The Hidden Life of Trees: What They Feel, How They Communicate – Discoveries from a Secret World](https://www.goodreads.com/book/show/28256439-the-hidden-life-of-trees)
+- [Eloquent JavaScript: A Modern Introduction to Programming](https://www.goodreads.com/book/show/8910666-eloquent-javascript)
 
-On her free time, you'll find her sitting under the sun reading a book or playing Shop Heroes on her phone, recreating restaurant meals at home and gardening in the backyard. She enjoys an eclectic range of music and podcasts. Other times, you'll find her in Monster Hunter World smashing and stunning things with her big-ass hammer or flat out on Dirt Rally 2.0 and F1.
+<p class="text-lg">Recently finished:</p>
 
-## Related Links
+- [Phosphorescence: On Awe, Wonder and Things That Sustain You When the World Goes Dark](https://www.goodreads.com/book/show/52541673-phosphorescence)
+- [The Courage to Be Disliked: How to Free Yourself, Change your Life and Achieve Real Happiness](https://www.goodreads.com/book/show/43306206-the-courage-to-be-disliked)
+- [The Little Book of Hygge: The Danish Way to Live Well](https://www.goodreads.com/book/show/30045683-the-little-book-of-hygge)
 
-- [Now](/now/): See what Sheila is up to literally right now
-- [Uses](/uses/): Her hardware and software developer setup
+## 📺 Watching:
+
+- Critical Role, up to date
+- F1 2020 races
+- The Owl House
+- The Legend of Korra (rewatch), season 3
+- Wynonna Earp, season 4
+
+## 🎧 Listening:
+
+- [To Boldly Watch Podcast](https://goodtimesociety.podbean.com/)
+- [Syntax Podcast](https://syntax.fm/)
+- All of Max Richter's works, great music to listen to while reading or studying
+
+## 🎮 Gaming:
+
+Not actively playing at this point, only when the mood strikes.
+
+- Shop Heroes, theorycrafting and number crunching
+- Shop Titans
+- Dirt Rally 2.0
+- F1 2018, free from Humble Bundle!
+
+This page was listed on [nownownow.com](https://nownownow.com) and inspired by [Derek Sivers](https://nownownow.com/about).

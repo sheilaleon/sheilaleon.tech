@@ -6,7 +6,7 @@ description: 'Hardware and software developer setup'
 
 # Uses
 
-A current list of what my hardware and software setup both at home and on the go. This page is listed on [uses.tech](https://uses.tech) and inspired by [Wes Bos](https://wesbos.com).
+A list of hardware, software and on-the-go setup I use daily.
 
 ## 🏕 Setup
 
@@ -78,3 +78,5 @@ A current list of what my hardware and software setup both at home and on the go
 - Storybook
 - Github
 - Vercel
+
+This page is listed on [uses.tech](https://uses.tech) and inspired by [Wes Bos](https://wesbos.com).

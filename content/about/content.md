@@ -12,11 +12,11 @@ She currently lives in Sydney, Australia with her partner, 2 dogs and 3 cats. Sy
 
 ## Career
 
-She's worn many hats to propel her employer's business forward. Her hats include: customer service rep, a digital designer, a UI/UX designer, a product manager, and all-round glue worker. Her latest role was the Head of Engineering at Zanui.com.au, a pure-play online retail start up for the last four years.
+She's worn many hats to propel her employer's business forward. Her hats include: customer service rep, a digital designer, a product manager, and all-round glue worker. Her latest role was the Head of Engineering at Zanui.com.au, a pure-play online retail start up for the last four years.
 
 Known as the "handywoman" amongst her friends and colleagues, her peers voted her to win back to back "The Duct Tape Award" and "The MacGyver Award" awards at Zanui for being able to fix just about anything.
 
-Currently, Sheila is working on obtaining a new hat as a self-taught full stack web developer by consuming as much educational content as possible. Jamstack has her much of interest right now.xw
+Currently, Sheila is working on obtaining a new hat as a self-taught full stack web developer by consuming as much educational content as possible. Jamstack has her much of interest right now.
 
 ## Personal
 

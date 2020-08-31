@@ -36,7 +36,7 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allMarkdownRemark.edges.forEach((edge) => {
     if (edge.node.frontmatter.posttype === 'garden') {
       createPage({
-        path: `/digital-garden${edge.node.fields.slug}`,
+        path: `/the-garden${edge.node.fields.slug}`,
         component: gardenPost,
         context: {
           slug: edge.node.fields.slug,
