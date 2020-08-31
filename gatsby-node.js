@@ -1,62 +1,71 @@
-/* eslint-disable */
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const path = require(`path`);
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const blogPost = path.resolve(`./src/templates/blog-post-template.js`);
+  const gardenPost = path.resolve(`./src/templates/garden-template.js`);
+
   const result = await graphql(
     `
       {
-        allMarkdownRemark(limit: 1000, filter: {fileAbsolutePath: {regex: "\/blog/"}}, sort: {fields: frontmatter___date, order: DESC}) {
+        allMarkdownRemark {
           edges {
             node {
+              frontmatter {
+                tags
+                category
+                posttype
+              }
               fields {
                 slug
-              }
-              frontmatter {
-                title
               }
             }
           }
         }
       }
     `
-  )
+  );
 
   if (result.errors) {
-    throw result.errors
+    throw result.errors;
   }
 
   // Create blog posts pages.
-  const posts = result.data.allMarkdownRemark.edges
-
-  posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node
-    const next = index === 0 ? null : posts[index - 1].node
-
-    createPage({
-      path: post.node.fields.slug,
-      component: blogPost,
-      context: {
-        slug: post.node.fields.slug,
-        previous,
-        next,
-      },
-    })
-  })
-}
+  result.data.allMarkdownRemark.edges.forEach((edge) => {
+    if (edge.node.frontmatter.posttype === 'garden') {
+      createPage({
+        path: `/the-garden${edge.node.fields.slug}`,
+        component: gardenPost,
+        context: {
+          slug: edge.node.fields.slug,
+          category: edge.node.frontmatter.category,
+        },
+      });
+    } else {
+      // blog post
+      createPage({
+        path: `/blog${edge.node.fields.slug}`,
+        component: blogPost,
+        context: {
+          slug: edge.node.fields.slug,
+          category: edge.node.frontmatter.category,
+        },
+      });
+    }
+  });
+};
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
+  const { createNodeField } = actions;
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    const value = createFilePath({ node, getNode });
     createNodeField({
       name: `slug`,
       node,
       value,
-    })
+    });
   }
-}
+};

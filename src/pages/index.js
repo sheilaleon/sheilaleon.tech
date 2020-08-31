@@ -13,10 +13,10 @@ const Index = ({ data, location }) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO title={siteTitle} description={description} />
+      <SEO title={`${siteTitle} - ${description}`} description={description} />
       <Hero />
-      <section className="section">
-        <p>🖖🏼 Hello, I'm Sheila!</p>
+      <section>
+        <p>👋🏽 Hello, I'm Sheila!</p>
         <p>
           I specialise in user interfaces, customer experience, visual design
           and product strategy.

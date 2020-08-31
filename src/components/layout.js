@@ -5,7 +5,7 @@ import Footer from './footer';
 const Layout = ({ title, children }) => (
   <>
     <Header title={title} />
-    <main className="container">{children}</main>
+    <main>{children}</main>
     <Footer />
   </>
 );
