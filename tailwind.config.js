@@ -14,50 +14,66 @@ module.exports = {
     typography: {
       default: {
         css: {
-          color: 'text-pale-chestnut',
+          color: '#DEA5A3',
           a: {
-            color: 'text-pale-chestnut',
+            color: '#DEA5A3',
+            textDecoration: 'none',
             '&:hover': {
-              color: 'text-fantasy',
+              color: '#EAD5D4',
             },
+          },
+          ul: {
+            marginLeft: '0.6rem',
           },
           'ul > li': {
             position: 'relative',
+            lineHeight: '1.4',
           },
           'ul > li::before': {
             content: '""',
             position: 'absolute',
-            backgroundColor: '#dea5a3',
+            backgroundColor: '#DEA5A3',
             borderRadius: '50%',
           },
           h1: {
-            color: 'text-mountbatten-pink',
+            color: '#DEA5A3',
             fontWeight: '400',
           },
           h2: {
-            color: 'text-mountbatten-pink',
+            color: '#DEA5A3',
             fontWeight: '400',
           },
           h3: {
-            color: 'text-mountbatten-pink',
+            color: '#DEA5A3',
             fontWeight: '400',
           },
           h4: {
-            color: 'text-mountbatten-pink',
+            color: '#DEA5A3',
             fontWeight: '400',
           },
-          p: {
-            fontSize: '1rem',
+          blockquote: {
+            color: '#DEA5A3',
+            borderLeftColor: '#937A8B',
+          },
+          hr: {
+            borderColor: 'rgba(232, 162, 161, 0.5)',
+          },
+          th: {
+            color: '#DEA5A3',
+            fontWeight: '700',
+          },
+          thead: {
+            borderBottomColor: 'rgba(232, 162, 161, 0.5)',
           },
         },
       },
     },
     extend: {
       colors: {
-        'black-russian': '#23212d',
-        martinique: '#3a3747',
-        'mountbatten-pink': '#937a8b',
-        'pale-chestnut': '#dea5a3',
+        'black-russian': '#23212D',
+        martinique: '#3A3747',
+        'mountbatten-pink': '#937A8B',
+        'pale-chestnut': '#DEA5A3',
         fantasy: '#EAD5D4',
       },
       inset: {

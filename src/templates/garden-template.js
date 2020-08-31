@@ -16,17 +16,11 @@ const GardenPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article>
-        <header>
-          <h1>{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-        </header>
+      <section className="prose lg:prose-xl">
+        <h1>{post.frontmatter.title}</h1>
+        <p>{post.frontmatter.date}</p>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr />
-        <footer>
-          <Bio />
-        </footer>
-      </article>
+      </section>
 
       <nav>
         <ul>

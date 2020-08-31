@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/digital-garden`,
+        path: `${__dirname}/content/the-garden`,
         name: `garden`,
       },
     },
