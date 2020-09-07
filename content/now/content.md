@@ -39,11 +39,9 @@ Since I don't actively participate in social media, this is my way of sharing an
 
 ## 📺 Watching:
 
-- Critical Role, up to date
+- Critical Role, campaign 2
 - F1 2020 races
-- The Owl House
-- The Legend of Korra (rewatch), season 3
-- Wynonna Earp, season 4
+- The Legend of Korra (rewatch), season 4
 
 ## 🎧 Listening:
 
@@ -53,11 +51,7 @@ Since I don't actively participate in social media, this is my way of sharing an
 
 ## 🎮 Gaming:
 
-Not actively playing at this point, only when the mood strikes.
-
+- Dirt Rally 2.0, addicted, full stop.
 - Shop Heroes, theorycrafting and number crunching
-- Shop Titans
-- Dirt Rally 2.0
-- F1 2018, free from Humble Bundle!
 
 This page was listed on [nownownow.com](https://nownownow.com) and inspired by [Derek Sivers](https://nownownow.com/about).
