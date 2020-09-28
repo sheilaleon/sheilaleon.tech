@@ -60,4 +60,4 @@ Not actively playing at this point, only when the mood strikes.
 - Dirt Rally 2.0
 - F1 2018, free from Humble Bundle!
 
-This page was listed on [nownownow.com](https://nownownow.com) and inspired by [Derek Sivers](https://nownownow.com/about).
+This page is listed on [nownownow.com](https://nownownow.com) and inspired by [Derek Sivers](https://nownownow.com/about).
