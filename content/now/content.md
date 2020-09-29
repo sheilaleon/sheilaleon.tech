@@ -6,52 +6,51 @@ description: 'What Sheila is currently up to right this minute'
 
 # Now
 
-Since I don't actively participate in social media, this is my way of sharing and documenting publicly what I've been up to.<br><span class="text-xs mt-0">Last updated 2020-08-26.</span>
+Since I don't actively participate in social media, this is my way of sharing and documenting publicly what I've been up to.<br><span class="text-xs mt-0">Last updated 2020-09-29.</span>
 
 ## 🎯 Currently I'm focusing on:
 
-- Staying safe and away from crowds first and foremost
-- Getting back into yoga daily again now that the days are not so cold temperature-wise
-- Journalling daily, use to be a chore, now a habit!
-- Hour of spending time in the sun daily to offset staying home
-- Working my way through freeCodeCamp's certifications to beat that imposter syndrome
-- A freelance Frontend Developer contract I just picked up. Super excited!
+- Making sure I stick to my 6 day morning run routine. I've noticed the weather greatly impacts how I feel for the day, today was especially hard since there was overcast and I just didn't want to do anything. But, I did it and routine still maintained.
+- Started applying for permanent roles, wish me luck.
+- Coding up a dark and light mode for my site, almost done. I even locked down a logo for myself finally.
+- Applying for my Australian Citizenship.
 
 ## 👩🏽‍🎓 Studying:
 
-- JavaScript, React and Jest
-- Woodworking for framing
-- Resin and silicone casting for custom keycap creation
-- Gardening for the upcoming Spring season
+- Powering through freeCodeCamp's JavaScript Algorithms and Data Structures Certification
+- Watching Deep JavaScript Foundations, v3 by Kyle Simpson
+- Driving rear wheel rally cars (virtual, of course)
 
 ## 📚 Reading:
 
 - Dev.to feed
-- Starting the Discworld Series 😱
+- Deepstash stories
+- [The Priory of the Orange Tree](https://www.goodreads.com/book/show/40275288-the-priory-of-the-orange-tree)
 - [The Hidden Life of Trees: What They Feel, How They Communicate – Discoveries from a Secret World](https://www.goodreads.com/book/show/28256439-the-hidden-life-of-trees)
-- [Eloquent JavaScript: A Modern Introduction to Programming](https://www.goodreads.com/book/show/8910666-eloquent-javascript)
+- [Eloquent JavaScript: A Modern Introduction to Programming](https://www.goodreads.com/book/show/8910666-eloquent-javascript) (kinda on the pile of shame now)
 
 <p class="text-lg">Recently finished:</p>
 
-- [Phosphorescence: On Awe, Wonder and Things That Sustain You When the World Goes Dark](https://www.goodreads.com/book/show/52541673-phosphorescence)
-- [The Courage to Be Disliked: How to Free Yourself, Change your Life and Achieve Real Happiness](https://www.goodreads.com/book/show/43306206-the-courage-to-be-disliked)
-- [The Little Book of Hygge: The Danish Way to Live Well](https://www.goodreads.com/book/show/30045683-the-little-book-of-hygge)
+- [The Light Fantastic](https://www.goodreads.com/book/show/34506.The_Light_Fantastic)
+- [The Color of Magic](https://www.goodreads.com/book/show/34497.The_Color_of_Magic)
 
 ## 📺 Watching:
 
 - Critical Role, campaign 2
+- Talks Machina
 - F1 2020 races
-- The Legend of Korra (rewatch), season 4
+- Star Trek Voyager
+- Mr. Robot, season 4
 
 ## 🎧 Listening:
 
 - [To Boldly Watch Podcast](https://goodtimesociety.podbean.com/)
 - [Syntax Podcast](https://syntax.fm/)
-- All of Max Richter's works, great music to listen to while reading or studying
+- Alice Coltrane
+- Gábor Szabó
 
 ## 🎮 Gaming:
 
-- Dirt Rally 2.0, addicted, full stop.
-- Shop Heroes, theorycrafting and number crunching
+- Dirt Rally 2.0
 
 This page is listed on [nownownow.com](https://nownownow.com) and inspired by [Derek Sivers](https://nownownow.com/about).
