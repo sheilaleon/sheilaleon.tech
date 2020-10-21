@@ -1,7 +1,7 @@
 @tailwind base;
 
 body {
-  @apply font-serif bg-martinique text-pale-chestnut antialiased;
+  @apply bg-martinique text-pale-chestnut antialiased;
   height: 100vh;
   background-color: #3a3747;
   background-image: linear-gradient(-70deg, #23212d, #3a3747);
@@ -63,10 +63,10 @@ a:hover {
   @apply text-fantasy underline;
 }
 a:active {
-  @apply text-fantasy outline-none underline;
+  @apply text-fantasy underline;
 }
 a:focus {
-  @apply outline-none shadow-outline;
+  /* @apply outline-white; */
 }
 a.preview-link {
   @apply ml-8 mt-4 no-underline;
