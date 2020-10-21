@@ -1,16 +1,11 @@
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
   purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.tsx'],
+  plugins: [require('@tailwindcss/typography')],
   theme: {
-    fontFamily: {
-      serif: [
-        'Lora',
-        'Georgia',
-        'Cambria',
-        '"Times New Roman"',
-        'Times',
-        'serif',
-      ],
-    },
     typography: {
       default: {
         css: {
@@ -77,7 +72,7 @@ module.exports = {
         fantasy: '#EAD5D4',
       },
       inset: {
-        '4': '4rem',
+        4: '4rem',
       },
       listStyleType: {
         square: 'square',
@@ -88,8 +83,4 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require('@tailwindcss/typography')],
-  future: {
-    removeDeprecatedGapUtilities: true,
-  },
 };
