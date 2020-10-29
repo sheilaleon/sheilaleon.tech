@@ -1,5 +1,5 @@
 ---
-pagettype: 'single-page'
+pagetype: 'single-page'
 title: 'Uses'
 description: 'Hardware and software developer setup'
 ---
@@ -7,6 +7,8 @@ description: 'Hardware and software developer setup'
 # Uses
 
 A list of hardware, software and on-the-go setup I use daily.
+\
+<span class="info">Last updated 2020-10-23.</span>
 
 ## 🏕 Setup
 
@@ -15,7 +17,6 @@ A list of hardware, software and on-the-go setup I use daily.
 - Logitech G Pro Wireless Gaming Mouse
 - Ducky TenKL One Keyboard with Massdrop X MiTo XDA Godspeed Custom Keycap Set
 - NPKC Wooden Wrist Rest
-- VAVA USB C 8-in-1 Hub
 - Glorious PC Gaming Race Mouse Pad
 - Ergohuman Classic Mesh Office Chair
 - PLT Backbeat PRO 2 Noise Cancelling Over-Ear Headphones
@@ -73,8 +74,6 @@ A list of hardware, software and on-the-go setup I use daily.
 
 - Gatsby
 - TailwindCSS
-- TailwindCSS Typography Plugin
-- Google Fonts: Lora
 - Storybook
 - Github
 - Vercel

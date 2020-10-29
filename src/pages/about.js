@@ -2,25 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from '../components/layout/layout';
 
-const About = ({ data }) => {
-  const siteTitle = data.site.siteMetadata.title;
-  const { description } = data.site.siteMetadata;
-
-  return (
-    <Layout title={siteTitle}>
-      <SEO title={siteTitle} description={description} />
-      <section
-        className="prose lg:prose-xl"
-        dangerouslySetInnerHTML={{
-          __html: data.aboutJson.content.childMarkdownRemark.html,
-        }}
-      />
-    </Layout>
-  );
-};
+const About = ({ data }) => (
+  <Layout pageTitle="About">
+    <section
+      /* eslint-disable */
+      dangerouslySetInnerHTML={{
+        __html: data.aboutJson.content.childMarkdownRemark.html,
+      }}
+      /* eslint-enable */
+    />
+  </Layout>
+);
 
 About.propTypes = {
   data: PropTypes.object.isRequired,
@@ -30,12 +24,6 @@ export default About;
 
 export const query = graphql`
   query AboutQuery {
-    site {
-      siteMetadata {
-        description
-        title
-      }
-    }
     aboutJson {
       title
       content {

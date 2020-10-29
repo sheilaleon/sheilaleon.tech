@@ -1,28 +1,32 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import Bio from '../components/bio';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from '../components/layout/layout';
+// import SEO from '../components/SEO';
 
 const GardenPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark;
-  const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = pageContext;
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO
+    <Layout
+      location={location}
+      pageTitle={post.frontmatter.title}
+      gardenDescription={post.frontmatter.description || post.excerpt}
+    >
+      {/* <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+      /> */}
+      <h1>{post.frontmatter.title}</h1>
+      <p className="italic">{post.frontmatter.date}</p>
+      <article
+        /* eslint-disable */
+        dangerouslySetInnerHTML={{ __html: post.html }}
+        /* eslint-enable */
       />
-      <section className="prose lg:prose-xl">
-        <h1>{post.frontmatter.title}</h1>
-        <p>{post.frontmatter.date}</p>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
-      </section>
 
-      <nav>
+      {/* <nav>
         <ul>
           <li>
             {previous && (
@@ -39,7 +43,7 @@ const GardenPostTemplate = ({ data, pageContext, location }) => {
             )}
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </Layout>
   );
 };
@@ -48,11 +52,11 @@ export default GardenPostTemplate;
 
 export const pageQuery = graphql`
   query GardenPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+    # site {
+    #   siteMetadata {
+    #     title
+    #   }
+    # }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)

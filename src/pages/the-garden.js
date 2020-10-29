@@ -1,17 +1,14 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from '../components/layout/layout';
 
-const GardenIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title;
+const GardenIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="The Garden" />
-      <section className="prose lg:prose-xl">
+    <Layout pageTitle="The Garden">
+      <section>
         <h1>The Garden</h1>
         <p>
           A collection of posts, ideas and random information I find worth

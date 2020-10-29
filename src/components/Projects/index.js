@@ -1,14 +1,14 @@
 import React from 'react';
 
-import GitHubLinkIcon from './icons/github-link';
-import ExternalLinkIcon from './icons/external-link';
+import GitHubLinkIcon from '../icons/github-link';
+import ExternalLinkIcon from '../icons/external-link';
 
 const Projects = () => (
   <section id="projects">
     <h2>Projects</h2>
     <div className="project-list">
       <div className="project" id="project-tile">
-        <h3>
+        <h4>
           <a
             href="https://recreate-kickstarter-recommendations.now.sh/"
             rel="noopener noreferrer"
@@ -16,7 +16,7 @@ const Projects = () => (
           >
             Kickstarter's Recommendations Clone
           </a>
-        </h3>
+        </h4>
         <p className="text-sm">
           A fun day project of re-creating an existing website to get familiar
           with Tailwind CSS and Next.js with the focus of mobile first.
@@ -50,12 +50,12 @@ const Projects = () => (
         </div>
       </div>
       <div className="project">
-        <h3>
-          <a href="/">SheilaLeon.tech</a>
-        </h3>
+        <h4>
+          <a href="/">sheilaleon.tech</a>
+        </h4>
         <p className="text-sm">
-          This site! Built with Gatsby, Tailwind CSS and Storybook UI. Deployed
-          using Vercel.
+          This site and very much still a WIP. Built with Gatsby, Tailwind CSS
+          and Storybook UI. Deployed using Vercel.
         </p>
         <ul className="tags">
           <li>GatsbyJS</li>
