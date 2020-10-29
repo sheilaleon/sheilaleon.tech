@@ -1,52 +1,92 @@
 module.exports = {
   siteMetadata: {
     title: `Sheila Leon`,
-    titleTemplate: `Designer, Frontend Developer, Product Manager, wearer of many hats`,
-    author: {
-      name: `Sheila L.`,
-      summary: `Designer, Frontend Developer, Product Manager, wearer of many hats`,
-    },
     description: `Designer, Frontend Developer, Product Manager, wearer of many hats`,
+    author: {
+      name: `Sheila Leon`,
+      summary: `She/her, Front-end Developer, Dodger Fan, Sim Racing Hobbyist`,
+    },
     siteUrl: `https://sheilaleon.tech`,
     image: `/sheilaleon.png`,
+    imageSecure: `https://gravatar.com/avatar/508c1e239f319d4f4d7c0182aa59be1b?s=400`,
     twitterUsername: `@kan`,
     social: {
       twitter: `kan`,
     },
+    navigationLinks: [
+      {
+        label: `About`,
+        link: `/about/`,
+      },
+      {
+        label: `Garden`,
+        link: `/the-garden/`,
+      },
+      {
+        label: `Now`,
+        link: `/now/`,
+      },
+      {
+        label: `Uses`,
+        link: `/uses/`,
+      },
+    ],
+    socialLinks: [
+      {
+        label: `GitHub`,
+        link: `https://github.com/sheilaleon`,
+        icon: `github`,
+      },
+      {
+        label: `Twitter`,
+        link: `https://twitter.com/kan`,
+        icon: `twitter-alt`,
+      },
+      {
+        label: `LinkedIn`,
+        link: `https://linkedin.com/in/sheilaleon`,
+        icon: `linkedin`,
+      },
+      {
+        label: `Instagram`,
+        link: `https://instagram.com/sheilaleon_`,
+        icon: `instagram`,
+      },
+    ],
   },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
+        path: `${__dirname}/src/assets`,
         name: `assets`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/the-garden`,
+        path: `${__dirname}/src/content/the-garden`,
         name: `garden`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/about`,
+        path: `${__dirname}/src/content/about`,
         name: `about`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/uses`,
+        path: `${__dirname}/src/content/uses`,
         name: `uses`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/now`,
+        path: `${__dirname}/src/content/now`,
         name: `now`,
       },
     },
@@ -111,24 +151,6 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-simple-analytics`,
-      options: {
-        // Optional custom domain
-        domain: `sa.sheilaleon.tech`,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-sentry',
-      options: {
-        dsn: 'https://d6aff4bf271b474ebd8d5657435b8964@sentry.io/5169643',
-        // Optional settings, see https://docs.sentry.io/clients/node/config/#optional-settings
-        environment: process.env.NODE_ENV,
-        enabled: (() =>
-          ['production', 'stage'].indexOf(process.env.NODE_ENV) !== -1)(),
-        attachStacktrace: true,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
@@ -140,15 +162,16 @@ module.exports = {
         name: `SheilaLeon.tech`,
         short_name: `Sheila Leon`,
         start_url: `/`,
-        background_color: `#3a3747`,
-        theme_color: `#dea5a3`,
+        background_color: `#1a202c`,
+        theme_color: `#16db65`,
         display: `minimal-ui`,
-        icon: `content/assets/favicon.svg`,
+        icon: `src/assets/favicon.svg`,
       },
     },
     `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-react-svg`,
   ],
 };

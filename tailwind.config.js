@@ -3,84 +3,45 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.tsx'],
-  plugins: [require('@tailwindcss/typography')],
+  purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
   theme: {
-    typography: {
-      default: {
-        css: {
-          color: '#DEA5A3',
-          a: {
-            color: '#DEA5A3',
-            textDecoration: 'none',
-            '&:hover': {
-              color: '#EAD5D4',
-            },
-          },
-          ul: {
-            marginLeft: '0.6rem',
-          },
-          'ul > li': {
-            position: 'relative',
-            lineHeight: '1.4',
-          },
-          'ul > li::before': {
-            content: '""',
-            position: 'absolute',
-            backgroundColor: '#DEA5A3',
-            borderRadius: '50%',
-          },
-          h1: {
-            color: '#DEA5A3',
-            fontWeight: '400',
-          },
-          h2: {
-            color: '#DEA5A3',
-            fontWeight: '400',
-          },
-          h3: {
-            color: '#DEA5A3',
-            fontWeight: '400',
-          },
-          h4: {
-            color: '#DEA5A3',
-            fontWeight: '400',
-          },
-          blockquote: {
-            color: '#DEA5A3',
-            borderLeftColor: '#937A8B',
-          },
-          hr: {
-            borderColor: 'rgba(232, 162, 161, 0.5)',
-          },
-          th: {
-            color: '#DEA5A3',
-            fontWeight: '700',
-          },
-          thead: {
-            borderBottomColor: 'rgba(232, 162, 161, 0.5)',
-          },
-        },
+    container: {
+      center: true,
+      padding: {
+        default: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
       },
     },
     extend: {
       colors: {
-        'black-russian': '#23212D',
-        martinique: '#3A3747',
-        'mountbatten-pink': '#937A8B',
-        'pale-chestnut': '#DEA5A3',
-        fantasy: '#EAD5D4',
+        current: 'currentColor',
+        background: 'var(--colour-bg)',
+        default: 'var(--colour-default)',
+        defaultHover: 'var(--colour-default-hover)',
+        heading: 'var(--colour-heading)',
+        link: 'var(--colour-link)',
+        linkHover: 'var(--colour-link-hover)',
+        primary: 'var(--colour-primary)',
+        primaryHover: 'var(--colour-primary-hover)',
+        secondary: 'var(--colour-secondary)',
+        secondayHover: 'var(--colour-secondary-hover)',
+        accent: 'var(--colour-accent)',
+        accentHover: 'var(--colour-accent-hover)',
+        muted: 'var(--colour-muted)',
+        mutedHover: 'var(--colour-muted-hover)',
+        logoMain: 'var(--colour-logo)',
+        logoSecondary: 'var(--colour-logoSecondary)',
       },
-      inset: {
-        4: '4rem',
-      },
-      listStyleType: {
-        square: 'square',
-      },
-      boxShadow: {
-        outline: '0 0 0 2px rgba(234, 213, 212, 0.80)',
-      },
+      borderColor: (theme) => ({
+        default: 'var(--colour-border)',
+        hover: 'var(--colour-border-hover)',
+        ...theme('colors'),
+      }),
     },
   },
   variants: {},
+  // eslint-disable-next-line global-require
+  plugins: [require('@tailwindcss/typography')],
 };
