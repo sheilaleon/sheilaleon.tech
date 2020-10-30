@@ -42,10 +42,7 @@ Since I don't actively participate in social media, this is my way of sharing an
 - Narrative Telephone, season 2
 - Talks Machina
 - Formula 1, even all the Free Practice sessions and Qualis
-- WRC
-- World Series <div style="display: inline-block; padding: 0 6px; color: #fff; background: #005A9C; font-weight: 700;border-radius: 7px;">⚾️&nbsp; <em>ITFDB!!!! Let's go Dodgers!</em></div>
-- The Last Dance
-- Star Trek Voyager
+- Blood of Zeus
 
 ### Recently finished:
 
@@ -54,6 +51,7 @@ Since I don't actively participate in social media, this is my way of sharing an
 - Kipo and the Age of Wonderbeasts: Season 3
 - Knock Down The House
 - The Haunting of Bly Manor
+- The Last Dance
 
 ## 🎧 Listening:
 
@@ -64,6 +62,7 @@ Since I don't actively participate in social media, this is my way of sharing an
 ## 🎮 Playing:
 
 - Genshin Impact
+- Shop Heroes
 - Dirt Rally 2.0
 
 </div>

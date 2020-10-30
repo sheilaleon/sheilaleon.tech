@@ -9,9 +9,13 @@
 
   --colour-primary: #058c42;
   --colour-primary-hover: #16db65;
+  --rgba-primary-start: 5, 140, 66;
+  --rgba-primary-end: 22, 219, 101;
 
   --colour-secondary: #ee6352;
   --colour-secondary-hover: #ffa077;
+  --rgba-secondary-start: 238, 99, 82;
+  --rgba-secondary-end: 211, 145, 128;
 
   --colour-accent: #f2bb05;
   --colour-accent-hover: #f2da05;
@@ -37,6 +41,8 @@
 
   --colour-primary: #16db65;
   --colour-primary-hover: #058c42;
+  --rgba-primary-start: 22, 219, 101;
+  --rgba-primary-end: 5, 140, 66;
 
   --colour-secondary: #ffa077;
   --colour-secondary-hover: #ee6352;
