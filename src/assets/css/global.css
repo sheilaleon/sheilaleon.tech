@@ -40,16 +40,16 @@
     @apply no-underline font-semibold;
   }
   h1 {
-    @apply text-4xl mb-6;
+    @apply text-4xl mb-6 tracking-tighter;
   }
   h2 {
-    @apply text-3xl mt-10 mb-4;
+    @apply text-3xl mt-10 mb-4 tracking-tight;
   }
   h3 {
-    @apply text-2xl mt-8 mb-4;
+    @apply text-2xl mt-8 mb-4 tracking-tight;
   }
   h4 {
-    @apply text-xl mt-6 mb-4;
+    @apply text-xl mt-6 mb-4 tracking-tight;
   }
   p {
     @apply mb-6 leading-relaxed;
@@ -67,13 +67,14 @@
   }
   p a::after,
   li a::after {
-    @apply absolute w-full bottom-0 left-0 opacity-0 rounded-full transition-all duration-300 ease-in-out;
+    @apply absolute w-full left-0 opacity-0 rounded-sm transition-all duration-300 ease-in-out;
     content: '';
-    height: 10%;
+    height: 3px;
+    bottom: -5px;
     background: linear-gradient(
       135deg,
-      rgba(22, 219, 101, 1) 0%,
-      rgba(5, 140, 66, 1) 90%
+      rgba(var(--rgba-primary-start)) 0%,
+      rgba(var(--rgba-primary-end)) 90%
     );
     transform-origin: 50% 0%;
     transform: scaleX(0);
@@ -123,30 +124,32 @@
     @apply flex justify-end content-center mr-3;
   }
   .active::before {
-    @apply absolute w-full bottom-0 left-0 rounded-full;
+    @apply absolute w-full left-0 rounded-sm;
     content: '';
+    height: 3px;
+    bottom: -3px;
     background: linear-gradient(
       135deg,
-      rgba(22, 219, 101, 1) 0%,
-      rgba(5, 140, 66, 1) 90%
+      rgba(var(--rgba-primary-start)) 0%,
+      rgba(var(--rgba-primary-end)) 90%
     );
-    height: 10%;
     z-index: -10;
   }
   .nav-links a {
-    @apply mx-2 text-default text-sm font-semibold leading-tight relative transition-all duration-300;
+    @apply mx-2 text-default text-sm font-semibold relative transition-all duration-300;
   }
   .nav-links a:hover {
     @apply text-linkHover;
   }
   .nav-links a::after {
-    @apply absolute w-full bottom-0 left-0 opacity-0 rounded-full transition-all duration-300 ease-in-out;
+    @apply absolute w-full left-0 opacity-0 rounded-sm transition-all duration-300 ease-in-out;
     content: '';
-    height: 10%;
+    height: 3px;
+    bottom: -3px;
     background: linear-gradient(
       135deg,
-      rgba(22, 219, 101, 1) 0%,
-      rgba(5, 140, 66, 1) 90%
+      rgba(var(--rgba-primary-start)) 0%,
+      rgba(var(--rgba-primary-end)) 90%
     );
     transform-origin: 50% 0%;
     transform: scaleX(0);
@@ -169,10 +172,10 @@
     @apply text-mutedHover;
   }
   .hero h1 {
-    @apply leading-tight pb-2 text-3xl;
+    @apply pb-2 leading-tight text-3xl tracking-normal;
   }
   .greetings {
-    @apply text-5xl font-semibold;
+    @apply text-5xl font-semibold tracking-tight;
   }
   .info {
     @apply text-xs mt-0;
@@ -185,7 +188,7 @@
     @apply relative;
   }
   .project h4 {
-    @apply leading-tight mt-4;
+    @apply mt-4;
   }
   .project h4 a {
     @apply relative transition-all duration-300 text-link;
@@ -194,13 +197,14 @@
     @apply text-linkHover;
   }
   .project h4 a::after {
-    @apply absolute w-full bottom-0 left-0 opacity-0 rounded-full transition-all duration-300 ease-in-out;
+    @apply absolute w-full left-0 opacity-0 rounded-sm transition-all duration-300 ease-in-out;
     content: '';
-    height: 8%;
+    height: 3px;
+    bottom: -5px;
     background: linear-gradient(
       135deg,
-      rgba(22, 219, 101, 1) 0%,
-      rgba(5, 140, 66, 1) 90%
+      rgba(var(--rgba-primary-start)) 0%,
+      rgba(var(--rgba-primary-end)) 90%
     );
     transform-origin: 50% 0%;
     transform: scaleX(0);
@@ -236,13 +240,14 @@
     @apply ml-1 text-xs relative transition-all duration-300 leading-snug;
   }
   a.preview-link span::after {
-    @apply absolute w-full bottom-0 left-0 opacity-0 rounded-full transition-all duration-300 ease-in-out;
+    @apply absolute w-full left-0 opacity-0 rounded-sm transition-all duration-300 ease-in-out;
     content: '';
-    height: 10%;
+    height: 3px;
+    bottom: -4px;
     background: linear-gradient(
       135deg,
-      rgba(22, 219, 101, 1) 0%,
-      rgba(5, 140, 66, 1) 90%
+      rgba(var(--rgba-primary-start)) 0%,
+      rgba(var(--rgba-primary-end)) 90%
     );
     transform-origin: 50% 0%;
     transform: scaleX(0);
@@ -253,10 +258,16 @@
     @apply opacity-100;
     background: linear-gradient(
       135deg,
-      rgba(22, 219, 101, 1) 0%,
-      rgba(5, 140, 66, 1) 90%
+      rgba(var(--rgba-primary-start)) 0%,
+      rgba(var(--rgba-primary-end)) 90%
     );
     transform: scaleX(1);
+  }
+  .garden-list {
+    @apply list-none pl-0;
+  }
+  .garden-list li {
+    @apply flex items-center;
   }
 
   @screen md {
@@ -267,7 +278,7 @@
       @apply w-5 h-5;
     }
     .nav-links a {
-      @apply mx-3 text-base;
+      @apply mx-3 text-base leading-relaxed;
     }
     .social-icons a {
       @apply ml-3;
