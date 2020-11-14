@@ -157,6 +157,12 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-simple-analytics`,
+      options: {
+        domain: `***REMOVED***`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
