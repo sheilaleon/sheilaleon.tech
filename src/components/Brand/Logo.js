@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const Logo = () => (
+const Logo = ({ stopColourStart, stopColourEnd }) => (
   <motion.svg
     key="logo"
     width="40"
@@ -30,8 +30,8 @@ const Logo = () => (
         y2="39.3585"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.359375" stopColor="var(--colour-logo)" />
-        <stop offset="1" stopColor="var(--colour-logoSecondary)" />
+        <stop offset="0.359375" stopColor={`var${stopColourStart}`} />
+        <stop offset="1" stopColor={`var${stopColourEnd}`} />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -41,8 +41,8 @@ const Logo = () => (
         y2="23.7666"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.359375" stopColor="var(--colour-logo)" />
-        <stop offset="1" stopColor="var(--colour-logoSecondary)" />
+        <stop offset="0.359375" stopColor={`var${stopColourStart}`} />
+        <stop offset="1" stopColor={`var${stopColourEnd}`} />
       </linearGradient>
     </defs>
   </motion.svg>

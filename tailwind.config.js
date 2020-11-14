@@ -39,6 +39,9 @@ module.exports = {
         hover: 'var(--colour-border-hover)',
         ...theme('colors'),
       }),
+      outline: {
+        custom: ['2px solid var(--colour-logo)', '5px'],
+      },
     },
   },
   variants: {},

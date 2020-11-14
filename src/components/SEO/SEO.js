@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useLocation } from '@reach/router';
+
 import useSiteMetadata from '../../hooks/useSiteMetadata';
 
 const SEO = ({ pageTitle, gardenDescription, article }) => {
@@ -9,19 +10,15 @@ const SEO = ({ pageTitle, gardenDescription, article }) => {
     title,
     description,
     image,
-    defaultTitle,
-    imageSecure,
-    defaultDescription,
     siteUrl,
-    defaultImage,
     twitterUsername,
   } = useSiteMetadata();
 
   const seo = {
-    title: title || defaultTitle,
+    title,
     pageTitle,
-    description: gardenDescription || description || defaultDescription,
-    image: `${siteUrl}${image || defaultImage || imageSecure}`,
+    description: gardenDescription || description,
+    image: `${siteUrl}${image}`,
     url: `${siteUrl}${pathname}`,
   };
 
@@ -46,7 +43,7 @@ const SEO = ({ pageTitle, gardenDescription, article }) => {
 
       {(article ? true : null) && <meta property="og:type" content="article" />}
 
-      {seo.tittle && <meta property="og:title" content={seo.title} />}
+      {seo.title && <meta property="og:title" content={seo.title} />}
 
       {seo.description && (
         <meta property="og:description" content={seo.description} />
@@ -60,7 +57,7 @@ const SEO = ({ pageTitle, gardenDescription, article }) => {
         <meta name="twitter:creator" content={twitterUsername} />
       )}
 
-      {seo.title && <meta name="twitter:title" content={seo.title} />}
+      {seo.title && <meta name="twitter:title" content={seo.pageTitle} />}
 
       {seo.description && (
         <meta name="twitter:description" content={seo.description} />

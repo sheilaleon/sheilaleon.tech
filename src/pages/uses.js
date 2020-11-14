@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
-import Layout from '../components/layout/layout';
+import Layout from '../components/Layout/Layout';
 
 const Uses = ({ data }) => (
   <Layout pageTitle="Uses">
     <section
-      /* eslint-disable */
+      className="pages"
+      // eslint-disable-next-line
       dangerouslySetInnerHTML={{
         __html: data.usesJson.content.childMarkdownRemark.html,
       }}
-      /* eslint-enable */
     />
   </Layout>
 );

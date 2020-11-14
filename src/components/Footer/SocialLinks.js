@@ -1,6 +1,7 @@
 import React from 'react';
 import SocialLogo from 'social-logos';
 import { motion, useAnimation } from 'framer-motion';
+
 import useSiteMetadata from '../../hooks/useSiteMetadata';
 
 const SocialLinks = () => {

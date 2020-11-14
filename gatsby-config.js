@@ -1,14 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: `Sheila Leon`,
-    description: `Designer, Frontend Developer, Product Manager, wearer of many hats`,
+    description: `Website, Portfolio & Digital Garden of the Front-end Developer Sheila Leon`,
     author: {
       name: `Sheila Leon`,
-      summary: `She/her, Front-end Developer, Dodger Fan, Sim Racing Hobbyist`,
+      summary: `She/her, Front-end Developer, Critter, Los Doyers Fan & Sim Racing Hobbyist 🏳️‍🌈`,
     },
     siteUrl: `https://sheilaleon.tech`,
     image: `/sheilaleon.png`,
-    imageSecure: `https://gravatar.com/avatar/508c1e239f319d4f4d7c0182aa59be1b?s=400`,
     twitterUsername: `@kan`,
     social: {
       twitter: `kan`,
@@ -67,6 +66,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/content/the-garden`,
         name: `garden`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/projects`,
+        name: `projects`,
       },
     },
     {

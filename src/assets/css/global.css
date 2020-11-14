@@ -40,7 +40,7 @@
     @apply no-underline font-semibold;
   }
   h1 {
-    @apply text-4xl mb-6 tracking-tighter;
+    @apply text-4xl mb-6 tracking-tight;
   }
   h2 {
     @apply text-3xl mt-10 mb-4 tracking-tight;
@@ -57,35 +57,25 @@
   p:last-child {
     @apply mb-0;
   }
-  p a,
-  li a {
-    @apply font-bold text-link whitespace-no-wrap relative transition-all duration-150;
+  p a {
+    @apply font-bold text-link whitespace-no-wrap relative transition-colors duration-150;
   }
-  p a:hover,
-  li a:hover {
+  p a:hover {
     @apply text-linkHover;
   }
   p a::after,
-  li a::after {
-    @apply absolute w-full left-0 opacity-0 rounded-sm transition-all duration-300 ease-in-out;
+  .pages ul li a::after {
+    @apply absolute w-full left-0 border-b-2 border-primaryHover duration-150 ease-in-out;
+    transition-property: width;
     content: '';
-    height: 3px;
-    bottom: -5px;
-    background: linear-gradient(
-      135deg,
-      rgba(var(--rgba-primary-start)) 0%,
-      rgba(var(--rgba-primary-end)) 90%
-    );
-    transform-origin: 50% 0%;
-    transform: scaleX(0);
+    bottom: -3px;
     z-index: -10;
   }
   p a:hover::after,
   p a:focus::after,
-  li a:hover::after,
-  li a:focus::after {
-    @apply opacity-100;
-    transform: scaleX(1);
+  .pages ul li > a:hover::after,
+  .pages ul li > a:focus::after {
+    @apply w-0;
   }
   ul {
     @apply list-disc list-outside pl-8 pb-4;
@@ -100,8 +90,8 @@
   }
 
   /* Colour Scheme */
-  .color-mode {
-    @apply w-4 h-4;
+  .colour-mode:focus {
+    @apply outline-none;
   }
   .light {
     @apply text-accent;
@@ -110,10 +100,10 @@
     @apply text-accentHover;
   }
   .dark {
-    @apply text-muted;
+    color: #8392b3;
   }
   .dark:hover {
-    @apply text-mutedHover;
+    @apply text-muted;
   }
 
   /* Nav & Social Links */
@@ -123,41 +113,29 @@
   .nav-links {
     @apply flex justify-end content-center mr-3;
   }
-  .active::before {
-    @apply absolute w-full left-0 rounded-sm;
+  .nav-links a.active::after {
+    @apply absolute w-full left-0  border-b-2 border-primaryHover transition-colors duration-150 ease-in-out;
     content: '';
-    height: 3px;
-    bottom: -3px;
-    background: linear-gradient(
-      135deg,
-      rgba(var(--rgba-primary-start)) 0%,
-      rgba(var(--rgba-primary-end)) 90%
-    );
+    bottom: 2px;
     z-index: -10;
   }
+  .nav-links a.active:focus::after {
+    @apply w-0;
+  }
   .nav-links a {
-    @apply mx-2 text-default text-sm font-semibold relative transition-all duration-300;
+    @apply mx-2 text-default font-medium text-sm relative transition-opacity duration-150;
   }
   .nav-links a:hover {
     @apply text-linkHover;
   }
   .nav-links a::after {
-    @apply absolute w-full left-0 opacity-0 rounded-sm transition-all duration-300 ease-in-out;
+    @apply absolute w-0 left-0 border-b-2 border-primaryHover transition-all duration-150 ease-in-out;
     content: '';
-    height: 3px;
-    bottom: -3px;
-    background: linear-gradient(
-      135deg,
-      rgba(var(--rgba-primary-start)) 0%,
-      rgba(var(--rgba-primary-end)) 90%
-    );
-    transform-origin: 50% 0%;
-    transform: scaleX(0);
+    bottom: 2px;
     z-index: -10;
   }
   .nav-links a:hover::after {
-    @apply opacity-100;
-    transform: scaleX(1);
+    @apply w-full;
   }
   .social-icons {
     @apply flex items-center justify-around;
@@ -191,29 +169,20 @@
     @apply mt-4;
   }
   .project h4 a {
-    @apply relative transition-all duration-300 text-link;
+    @apply relative whitespace-no-wrap transition-all duration-300 text-link;
   }
   .project h4 a:hover {
     @apply text-linkHover;
   }
   .project h4 a::after {
-    @apply absolute w-full left-0 opacity-0 rounded-sm transition-all duration-300 ease-in-out;
+    @apply absolute w-0 left-0 border-b-2 border-primaryHover transition-all duration-150 ease-in-out;
     content: '';
-    height: 3px;
-    bottom: -5px;
-    background: linear-gradient(
-      135deg,
-      rgba(var(--rgba-primary-start)) 0%,
-      rgba(var(--rgba-primary-end)) 90%
-    );
-    transform-origin: 50% 0%;
-    transform: scaleX(0);
+    bottom: -2px;
     z-index: -10;
   }
   .project h4 a:hover::after,
   .project h4 a:focus::after {
-    @apply opacity-100;
-    transform: scaleX(1);
+    @apply w-full;
   }
   .project p {
     @apply text-sm pb-4 mb-0;
@@ -231,37 +200,26 @@
     @apply flex items-center text-sm;
   }
   .preview a {
-    @apply flex justify-between items-center ml-4;
+    @apply flex justify-between font-semibold items-center ml-4 transition-all duration-150 ease-in-out;
   }
   .preview a:first-child {
     @apply ml-0;
+  }
+  .preview a:hover > svg {
+    @apply text-linkHover;
   }
   a.preview-link span {
     @apply ml-1 text-xs relative transition-all duration-300 leading-snug;
   }
   a.preview-link span::after {
-    @apply absolute w-full left-0 opacity-0 rounded-sm transition-all duration-300 ease-in-out;
+    @apply absolute w-0 left-0 border-b-2 border-primaryHover transition-all duration-150 ease-in-out;
     content: '';
-    height: 3px;
-    bottom: -4px;
-    background: linear-gradient(
-      135deg,
-      rgba(var(--rgba-primary-start)) 0%,
-      rgba(var(--rgba-primary-end)) 90%
-    );
-    transform-origin: 50% 0%;
-    transform: scaleX(0);
+    bottom: -1px;
     z-index: -10;
   }
   a.preview-link span:hover::after,
   a.preview-link span:focus::after {
-    @apply opacity-100;
-    background: linear-gradient(
-      135deg,
-      rgba(var(--rgba-primary-start)) 0%,
-      rgba(var(--rgba-primary-end)) 90%
-    );
-    transform: scaleX(1);
+    @apply w-full;
   }
   .garden-list {
     @apply list-none pl-0;
@@ -269,16 +227,30 @@
   .garden-list li {
     @apply flex items-center;
   }
+  a.garden-link:hover svg {
+    @apply text-linkHover;
+  }
+  a.garden-link > span {
+    @apply inline-block relative;
+  }
+  a.garden-link > span::after {
+    @apply absolute w-0 left-0 bottom-0 border-b-2 border-primaryHover transition-all duration-150 ease-in-out;
+    content: '';
+    z-index: -10;
+  }
+  a.garden-link:hover > span::after {
+    @apply w-full;
+  }
+  .pages a {
+    @apply relative font-semibold whitespace-no-wrap;
+  }
 
   @screen md {
     .logo span {
       @apply block;
     }
-    .color-mode {
-      @apply w-5 h-5;
-    }
     .nav-links a {
-      @apply mx-3 text-base leading-relaxed;
+      @apply mx-3 text-lg leading-relaxed whitespace-no-wrap;
     }
     .social-icons a {
       @apply ml-3;
