@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Layout from '../components/lay-out/Layout';
+import Layout from '../components/Layout/Layout';
 import Hero from '../components/Hero/Hero';
 import Projects from '../components/Projects/Projects';
 

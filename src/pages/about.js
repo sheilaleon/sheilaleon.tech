@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
-import Layout from '../components/lay-out/Layout';
+import Layout from '../components/Layout/Layout';
 
 const About = ({ data }) => (
   <Layout pageTitle="About">
