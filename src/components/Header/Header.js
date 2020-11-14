@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import useSiteMetadata from '../../hooks/useSiteMetadata';
-import ToggleColourScheme from '../lay-out/ToggleColourScheme';
+import ToggleColourScheme from '../Layout/ToggleColourScheme';
 import Brand from '../Brand/Brand';
 
 const Header = () => {
