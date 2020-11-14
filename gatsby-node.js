@@ -32,7 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
     throw result.errors;
   }
 
-  // Create blog posts pages.
+  // Create Garden pages.
   result.data.allMarkdownRemark.edges.forEach((edge) => {
     if (edge.node.frontmatter.posttype === 'garden') {
       createPage({

@@ -9,8 +9,8 @@
 
   --colour-primary: #058c42;
   --colour-primary-hover: #16db65;
-  --rgba-primary-start: 5, 140, 66;
-  --rgba-primary-end: 22, 219, 101;
+  --rgba-primary-start: 22, 219, 101;
+  --rgba-primary-end: 5, 140, 66;
 
   --colour-secondary: #ee6352;
   --colour-secondary-hover: #ffa077;
@@ -30,7 +30,7 @@
   --colour-logoSecondary: #058c42;
 }
 
-:root[data-color-scheme='dark'] {
+:root[data-colour-scheme='dark'] {
   --colour-default: #e0e1e4;
   --colour-default-hover: #ffffff;
   --colour-bg: #1a202c;

@@ -2,8 +2,8 @@ import React from 'react';
 import { RecoilRoot } from 'recoil';
 
 const init = () => {
-  const getPreferredColorScheme = () => {
-    const darkQuery = '(prefers-color-scheme: dark)';
+  const getPreferredColourScheme = () => {
+    const darkQuery = '(prefers-colour-scheme: dark)';
     const darkMQL = window.matchMedia ? window.matchMedia(darkQuery) : {};
     if (darkMQL.media === darkQuery && darkMQL.matches) {
       return 'dark';
@@ -12,15 +12,16 @@ const init = () => {
     return 'default';
   };
 
-  const colorScheme =
-    sessionStorage.getItem('color-scheme') ?? getPreferredColorScheme();
+  const colourScheme =
+    sessionStorage.getItem('colour-scheme') ?? getPreferredColourScheme();
 
-  document.documentElement.setAttribute('data-color-scheme', colorScheme);
+  document.documentElement.setAttribute('data-colour-scheme', colourScheme);
 
-  sessionStorage.setItem('color-scheme', colorScheme);
+  sessionStorage.setItem('colour-scheme', colourScheme);
 };
 
 const InitScript = ({ script }) => (
+  // eslint-disable-next-line
   <script dangerouslySetInnerHTML={{ __html: `(${script})();` }} />
 );
 

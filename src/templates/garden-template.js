@@ -1,33 +1,34 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import Layout from '../components/layout/layout';
-// import SEO from '../components/SEO';
+import Layout from '../components/Layout/Layout';
 
 const GardenPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark;
   const { previous, next } = pageContext;
+  console.log('location :>> ', location);
+  console.log('pageContext :>> ', pageContext);
 
   return (
     <Layout
       location={location}
-      pageTitle={post.frontmatter.title}
-      gardenDescription={post.frontmatter.description || post.excerpt}
+      pageTitle={`The Garden: ${post.frontmatter.title}`}
+      gardenDescription={post.frontmatter.description}
     >
-      {/* <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      /> */}
       <h1>{post.frontmatter.title}</h1>
-      <p className="italic">{post.frontmatter.date}</p>
+      <p className="text-xs">
+        {post.frontmatter.date}
+        {` • `}
+        {pageContext.category}
+      </p>
       <article
-        /* eslint-disable */
+        className="post"
+        // eslint-disable-next-line
         dangerouslySetInnerHTML={{ __html: post.html }}
-        /* eslint-enable */
       />
 
-      {/* <nav>
-        <ul>
+      <nav className="mt-8">
+        <ul className="list-none">
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
@@ -43,7 +44,7 @@ const GardenPostTemplate = ({ data, pageContext, location }) => {
             )}
           </li>
         </ul>
-      </nav> */}
+      </nav>
     </Layout>
   );
 };
@@ -52,11 +53,6 @@ export default GardenPostTemplate;
 
 export const pageQuery = graphql`
   query GardenPostBySlug($slug: String!) {
-    # site {
-    #   siteMetadata {
-    #     title
-    #   }
-    # }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)

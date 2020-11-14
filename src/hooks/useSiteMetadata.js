@@ -10,6 +10,7 @@ const useSiteMetadata = () => {
             name
             summary
           }
+          twitterUsername
           navigationLinks {
             link
             label
@@ -21,7 +22,6 @@ const useSiteMetadata = () => {
           }
           description
           image
-          imageSecure
           siteUrl
         }
       }
