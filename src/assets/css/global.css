@@ -37,7 +37,7 @@
   h3 a,
   h4,
   h4 a {
-    @apply no-underline font-semibold;
+    @apply no-underline font-semibold leading-none;
   }
   h1 {
     @apply text-4xl mb-6 tracking-tight;
@@ -114,7 +114,7 @@
     @apply flex justify-end content-center mr-3;
   }
   .nav-links a.active::after {
-    @apply absolute w-full left-0  border-b-2 border-primaryHover transition-colors duration-150 ease-in-out;
+    @apply absolute w-full left-0 border-b-2 border-primaryHover transition-colors duration-150 ease-in-out;
     content: '';
     bottom: 2px;
     z-index: -10;
@@ -242,7 +242,7 @@
     @apply w-full;
   }
   .pages a {
-    @apply relative font-semibold whitespace-no-wrap;
+    @apply relative font-semibold;
   }
 
   @screen md {
@@ -250,7 +250,7 @@
       @apply block;
     }
     .nav-links a {
-      @apply mx-3 text-lg leading-relaxed whitespace-no-wrap;
+      @apply mx-3 text-lg whitespace-no-wrap;
     }
     .social-icons a {
       @apply ml-3;
