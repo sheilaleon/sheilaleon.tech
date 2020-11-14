@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Icon from '../utils/Icon';
-import Layout from '../components/Layout/Layout';
+import Layout from '../components/lay-out/Layout';
 
 const GardenIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
