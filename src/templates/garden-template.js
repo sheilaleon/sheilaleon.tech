@@ -1,29 +1,34 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import Bio from '../components/bio';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from '../components/Layout/Layout';
 
 const GardenPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark;
-  const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = pageContext;
+  console.log('location :>> ', location);
+  console.log('pageContext :>> ', pageContext);
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
+    <Layout
+      location={location}
+      pageTitle={`The Garden: ${post.frontmatter.title}`}
+      gardenDescription={post.frontmatter.description}
+    >
+      <h1>{post.frontmatter.title}</h1>
+      <p className="text-xs">
+        {post.frontmatter.date}
+        {` • `}
+        {pageContext.category}
+      </p>
+      <article
+        className="post"
+        // eslint-disable-next-line
+        dangerouslySetInnerHTML={{ __html: post.html }}
       />
-      <section className="prose lg:prose-xl">
-        <h1>{post.frontmatter.title}</h1>
-        <p>{post.frontmatter.date}</p>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
-      </section>
 
-      <nav>
-        <ul>
+      <nav className="mt-8">
+        <ul className="list-none">
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
@@ -48,11 +53,6 @@ export default GardenPostTemplate;
 
 export const pageQuery = graphql`
   query GardenPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
