@@ -8,7 +8,7 @@ description: 'Hardware and software developer setup'
 
 A list of hardware, software and on-the-go setup I use daily.
 \
-<span class="info">Last updated 2020-10-23.</span>
+<span class="info">Last updated 2020-11-14.</span>
 
 ## 🏕 Setup
 
@@ -24,7 +24,7 @@ A list of hardware, software and on-the-go setup I use daily.
 
 ## 👩🏽‍💻 Development
 
-- Jetbrains Mono Font
+- Ligalex Mono [IBM Plex Mono with Ligatures](https://github.com/ToxicFrog/Ligaturizer/releases)
 - VS Code, extensions I use can be found on this [Gist](https://gist.github.com/sheilaleon/a8bb70c8a7f581cd5c5a221432921dc1)
 - iTerm2
 - GitKraken
@@ -45,15 +45,13 @@ A list of hardware, software and on-the-go setup I use daily.
 - Pixelsnap
 - IconJar
 - Squash
-- Gifox
 
 ## 🧶 General
 
 - 1password
 - Notion
-- Slack
-- Discord
-- Station
+- Franz
+- CleanShot
 - Bitbar
 - Karabiner
 - Better Touch Tool
@@ -74,6 +72,7 @@ A list of hardware, software and on-the-go setup I use daily.
 
 - Gatsby
 - TailwindCSS
+- Framer Motion
 - Storybook
 - Github
 - Vercel
