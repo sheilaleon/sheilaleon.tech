@@ -1,0 +1,262 @@
+@import './var.css';
+
+@tailwind base;
+
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-default text-lg antialiased;
+  }
+  .flex-container {
+    @apply h-screen flex flex-col justify-between;
+  }
+  header,
+  main,
+  footer {
+    @apply w-full max-w-4xl flex mx-auto px-12;
+  }
+  header,
+  footer {
+    @apply items-center justify-between py-12;
+  }
+  main {
+    @apply flex flex-col flex-grow mb-auto py-6;
+  }
+  section {
+    @apply pt-4;
+  }
+
+  /* Typography */
+  h1,
+  h1 a,
+  h2,
+  h2 a,
+  h3,
+  h3 a,
+  h4,
+  h4 a {
+    @apply no-underline font-semibold;
+  }
+  h1 {
+    @apply text-4xl mb-6 tracking-tight;
+  }
+  h2 {
+    @apply text-3xl mt-10 mb-4 tracking-tight;
+  }
+  h3 {
+    @apply text-2xl mt-8 mb-4 tracking-tight;
+  }
+  h4 {
+    @apply text-xl mt-6 mb-4 tracking-tight;
+  }
+  p {
+    @apply mb-6 leading-relaxed;
+  }
+  p:last-child {
+    @apply mb-0;
+  }
+  p a {
+    @apply font-bold text-link whitespace-no-wrap relative transition-colors duration-150;
+  }
+  p a:hover {
+    @apply text-linkHover;
+  }
+  p a::after,
+  .pages ul li a::after {
+    @apply absolute w-full left-0 border-b-2 border-primaryHover duration-150 ease-in-out;
+    transition-property: width;
+    content: '';
+    bottom: -3px;
+    z-index: -10;
+  }
+  p a:hover::after,
+  p a:focus::after,
+  .pages ul li > a:hover::after,
+  .pages ul li > a:focus::after {
+    @apply w-0;
+  }
+  ul {
+    @apply list-disc list-outside pl-8 pb-4;
+  }
+  li {
+    @apply pb-2;
+  }
+
+  /* Logo */
+  .logo {
+    @apply flex items-center content-center mr-auto;
+  }
+
+  /* Colour Scheme */
+  .colour-mode:focus {
+    @apply outline-none;
+  }
+  .light {
+    @apply text-accent;
+  }
+  .light:hover {
+    @apply text-accentHover;
+  }
+  .dark {
+    color: #8392b3;
+  }
+  .dark:hover {
+    @apply text-muted;
+  }
+
+  /* Nav & Social Links */
+  .navigation {
+    @apply flex items-center justify-between;
+  }
+  .nav-links {
+    @apply flex justify-end content-center mr-3;
+  }
+  .nav-links a.active::after {
+    @apply absolute w-full left-0  border-b-2 border-primaryHover transition-colors duration-150 ease-in-out;
+    content: '';
+    bottom: 2px;
+    z-index: -10;
+  }
+  .nav-links a.active:focus::after {
+    @apply w-0;
+  }
+  .nav-links a {
+    @apply mx-2 text-default font-medium text-sm relative transition-opacity duration-150;
+  }
+  .nav-links a:hover {
+    @apply text-linkHover;
+  }
+  .nav-links a::after {
+    @apply absolute w-0 left-0 border-b-2 border-primaryHover transition-all duration-150 ease-in-out;
+    content: '';
+    bottom: 2px;
+    z-index: -10;
+  }
+  .nav-links a:hover::after {
+    @apply w-full;
+  }
+  .social-icons {
+    @apply flex items-center justify-around;
+  }
+  .social-icons a {
+    @apply ml-2;
+  }
+  .social-icon {
+    @apply fill-current text-muted m-0;
+  }
+  .social-icon:hover {
+    @apply text-mutedHover;
+  }
+  .hero h1 {
+    @apply pb-2 leading-tight text-3xl tracking-normal;
+  }
+  .greetings {
+    @apply text-5xl font-semibold tracking-tight;
+  }
+  .info {
+    @apply text-xs mt-0;
+  }
+
+  .project-list {
+    @apply grid grid-cols-1 gap-16;
+  }
+  .project {
+    @apply relative;
+  }
+  .project h4 {
+    @apply mt-4;
+  }
+  .project h4 a {
+    @apply relative whitespace-no-wrap transition-all duration-300 text-link;
+  }
+  .project h4 a:hover {
+    @apply text-linkHover;
+  }
+  .project h4 a::after {
+    @apply absolute w-0 left-0 border-b-2 border-primaryHover transition-all duration-150 ease-in-out;
+    content: '';
+    bottom: -2px;
+    z-index: -10;
+  }
+  .project h4 a:hover::after,
+  .project h4 a:focus::after {
+    @apply w-full;
+  }
+  .project p {
+    @apply text-sm pb-4 mb-0;
+  }
+  ul.tags {
+    @apply list-none text-xs pt-0 pl-0;
+  }
+  .tags > li {
+    @apply inline-block pr-2 pb-0 text-muted;
+  }
+  .tags > li:last-child {
+    @apply pr-0;
+  }
+  .preview {
+    @apply flex items-center text-sm;
+  }
+  .preview a {
+    @apply flex justify-between font-semibold items-center ml-4 transition-all duration-150 ease-in-out;
+  }
+  .preview a:first-child {
+    @apply ml-0;
+  }
+  .preview a:hover > svg {
+    @apply text-linkHover;
+  }
+  a.preview-link span {
+    @apply ml-1 text-xs relative transition-all duration-300 leading-snug;
+  }
+  a.preview-link span::after {
+    @apply absolute w-0 left-0 border-b-2 border-primaryHover transition-all duration-150 ease-in-out;
+    content: '';
+    bottom: -1px;
+    z-index: -10;
+  }
+  a.preview-link span:hover::after,
+  a.preview-link span:focus::after {
+    @apply w-full;
+  }
+  .garden-list {
+    @apply list-none pl-0;
+  }
+  .garden-list li {
+    @apply flex items-center;
+  }
+  a.garden-link:hover svg {
+    @apply text-linkHover;
+  }
+  a.garden-link > span {
+    @apply inline-block relative;
+  }
+  a.garden-link > span::after {
+    @apply absolute w-0 left-0 bottom-0 border-b-2 border-primaryHover transition-all duration-150 ease-in-out;
+    content: '';
+    z-index: -10;
+  }
+  a.garden-link:hover > span::after {
+    @apply w-full;
+  }
+  .pages a {
+    @apply relative font-semibold whitespace-no-wrap;
+  }
+
+  @screen md {
+    .logo span {
+      @apply block;
+    }
+    .nav-links a {
+      @apply mx-3 text-lg leading-relaxed whitespace-no-wrap;
+    }
+    .social-icons a {
+      @apply ml-3;
+    }
+    .project-list {
+      @apply grid-cols-2;
+    }
+  }
+}

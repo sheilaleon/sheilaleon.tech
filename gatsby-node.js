@@ -4,7 +4,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const blogPost = path.resolve(`./src/templates/blog-post-template.js`);
+  // const blogPost = path.resolve(`./src/templates/blog-post-template.js`);
   const gardenPost = path.resolve(`./src/templates/garden-template.js`);
 
   const result = await graphql(
@@ -32,7 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
     throw result.errors;
   }
 
-  // Create blog posts pages.
+  // Create Garden pages.
   result.data.allMarkdownRemark.edges.forEach((edge) => {
     if (edge.node.frontmatter.posttype === 'garden') {
       createPage({
@@ -43,16 +43,16 @@ exports.createPages = async ({ graphql, actions }) => {
           category: edge.node.frontmatter.category,
         },
       });
-    } else {
-      // blog post
-      createPage({
-        path: `/blog${edge.node.fields.slug}`,
-        component: blogPost,
-        context: {
-          slug: edge.node.fields.slug,
-          category: edge.node.frontmatter.category,
-        },
-      });
+      // } else {
+      //   // blog post
+      //   createPage({
+      //     path: `/blog${edge.node.fields.slug}`,
+      //     component: blogPost,
+      //     context: {
+      //       slug: edge.node.fields.slug,
+      //       category: edge.node.frontmatter.category,
+      //     },
+      //   });
     }
   });
 };
