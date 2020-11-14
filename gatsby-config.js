@@ -157,6 +157,12 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-simple-analytics`,
+      options: {
+        domain: `sa.sheilaleon.tech`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
