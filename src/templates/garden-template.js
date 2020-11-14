@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import Layout from '../components/Layout/Layout';
+import Layout from '../components/lay-out/Layout';
 
 const GardenPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark;
