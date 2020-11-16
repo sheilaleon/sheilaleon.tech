@@ -10,7 +10,7 @@ const Layout = ({ pageTitle, gardenDescription, children }) => {
   const { title } = useSiteMetadata();
 
   return (
-    <div className="flex-container">
+    <>
       <SEO
         pageTitle={pageTitle ? `${pageTitle}` : null}
         gardenDescription={gardenDescription ? `${gardenDescription}` : null}
@@ -28,7 +28,7 @@ const Layout = ({ pageTitle, gardenDescription, children }) => {
         </motion.main>
       </AnimatePresence>
       <Footer title={title} />
-    </div>
+    </>
   );
 };
 
