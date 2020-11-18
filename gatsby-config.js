@@ -160,7 +160,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-simple-analytics`,
       options: {
-        domain: `sa.sheilaleon.tech`,
+        domain: process.env.SIMPLE_ANALYTICS_DOMAIN,
       },
     },
     `gatsby-transformer-sharp`,
