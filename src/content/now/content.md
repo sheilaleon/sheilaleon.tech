@@ -8,7 +8,7 @@ description: 'What Sheila is currently up to right this minute'
 
 Since I don't actively participate in social media, this is my way of sharing and documenting publicly what I've been up to.
 \
-<span class="info">Last updated 2020-10-23.</span>
+<span class="info">Last updated: 2020-12-15 14:25:11.</span>
 
 <div class="two-col">
 
@@ -16,54 +16,46 @@ Since I don't actively participate in social media, this is my way of sharing an
 
 - Morning yoga and jogging routine
 - Applying for my Australian Citizenship
-- DIYing and cable management for my gaming corner
+- Staying sane during the holidays
 
 ## 👩🏽‍🎓 Personal Development:
 
-- Powering through freeCodeCamp's JavaScript Algorithms and Data Structures Certification
-- Watching Deep JavaScript Foundations, v3 by Kyle Simpson on Frontend Masters
-- Re-watching Beginner JavaScript by Wes Bos for a refresher
+- FullStack Open 2020: I probably won't finish it in time, but here's hoping. [Link to submission repo](https://github.com/sheilaleon/fullstack-open-2020)
+- Familiarising myself with Angular for the new year.
 
 ## 📚 Reading:
 
-- Dev.to feed
-- Deepstash stories
-- [The Priory of the Orange Tree](https://www.goodreads.com/book/show/40275288-the-priory-of-the-orange-tree)
-- [Eloquent JavaScript: A Modern Introduction to Programming](https://www.goodreads.com/book/show/8910666-eloquent-javascript) (kinda on the pile of shame now)
+- [The Flight of the Eisenstein](https://www.goodreads.com/book/show/80155.The_Flight_of_the_Eisenstein)
 
 ### Recently finished:
 
-- [The Light Fantastic](https://www.goodreads.com/book/show/34506.The_Light_Fantastic)
-- [The Color of Magic](https://www.goodreads.com/book/show/34497.The_Color_of_Magic)
+- [HBR's 10 Must Reads on Negotiation](https://www.goodreads.com/book/show/42943661-hbr-s-10-must-reads-on-negotiation)
+- [The World of Critical Role](https://www.goodreads.com/book/show/49757384-the-world-of-critical-role)
+- [The Priory of the Orange Tree](https://www.goodreads.com/book/show/40275288-the-priory-of-the-orange-tree)
 
 ## 📺 Watching:
 
 - Critical Role, campaign 2
 - Narrative Telephone, season 2
 - Talks Machina
-- Formula 1, even all the Free Practice sessions and Qualis
-- Blood of Zeus
+- Euphoria
 
 ### Recently finished:
 
-- Mr. Robot
-- Carmen Sandiego: Season 3
-- Kipo and the Age of Wonderbeasts: Season 3
-- Knock Down The House
-- The Haunting of Bly Manor
-- The Last Dance
-
+- The Crown
+- Formula 1, what sports to watch now 😭
 ## 🎧 Listening:
 
 - [Syntax Podcast](https://syntax.fm/)
+- [Front End Happy Hour](https://frontendhappyhour.com/)
 - [To Boldly Watch Podcast](https://goodtimesociety.podbean.com/)
-- Inner Ocean Records' BLESS Volumes 1-3 on repeat
 
 ## 🎮 Playing:
 
-- Genshin Impact
 - Shop Heroes
-- Dirt Rally 2.0
+- Dirt Rally 2.0 in VR
+- American Truck Simulator in VR
+- Real VR Fishing 'Together Edition' - LOVING THIS! I have Plex running within the game so I can listen or watch my pile of shame while playing/fishing.
 
 </div>
 
