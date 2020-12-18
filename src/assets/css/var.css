@@ -7,17 +7,10 @@
   --colour-link: #353a4c;
   --colour-link-hover: #1a202c;
 
-  --colour-primary: #058c42;
-  --colour-primary-hover: #16db65;
-  --rgba-primary-start: 22, 219, 101;
-  --rgba-primary-end: 5, 140, 66;
+  --colour-primary: #ffc600;
+  --colour-secondary: #fc5b55;
 
-  --colour-secondary: #ee6352;
-  --colour-secondary-hover: #ffa077;
-  --rgba-secondary-start: 238, 99, 82;
-  --rgba-secondary-end: 211, 145, 128;
-
-  --colour-accent: #f2bb05;
+  --colour-accent: #fe933e;
   --colour-accent-hover: #f2da05;
 
   --colour-muted: #62677a;
@@ -26,26 +19,23 @@
   --colour-border: #62677a;
   --colour-border-hover: #353a4c;
 
-  --colour-logo: #16db65;
-  --colour-logoSecondary: #058c42;
+  --colour-selection-bg: #ffc600;
+  --colour-selection-text: #1a202c;
+
+  --colour-scrollbar: #a1a4af;
 }
 
 :root[data-colour-scheme='dark'] {
   --colour-default: #e0e1e4;
-  --colour-default-hover: #ffffff;
+  --colour-default-hover: #fff;
   --colour-bg: #1a202c;
   --colour-heading: #f7f9f7;
 
-  --colour-link: #ffffff;
+  --colour-link: #fff;
   --colour-link-hover: #f7f9f7;
 
-  --colour-primary: #16db65;
-  --colour-primary-hover: #058c42;
-  --rgba-primary-start: 22, 219, 101;
-  --rgba-primary-end: 5, 140, 66;
-
-  --colour-secondary: #ffa077;
-  --colour-secondary-hover: #ee6352;
+  --colour-primary: #ffc600;
+  --colour-secondary: #fc5b55;
 
   --colour-accent: #f2bb05;
   --colour-accent-hover: #f2da05;
@@ -56,6 +46,8 @@
   --colour-border: #353a4c;
   --colour-border-hover: #62677a;
 
-  --colour-logo: #16db65;
-  --colour-logoSecondary: #058c42;
+  --colour-selection-bg: #f2da05;
+  --colour-selection-text: #1a202c;
+
+  --colour-scrollbar: #353a4c;
 }

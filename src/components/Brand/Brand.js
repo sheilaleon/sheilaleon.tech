@@ -6,8 +6,8 @@ const Brand = ({ title }) => (
   <div>
     <Link to="/" className="logo" title={`Home - ${title}`}>
       <Logo
-        stopColourStart="(--colour-logo)"
-        stopColourEnd="(--colour-logoSecondary)"
+        stopColourStart="(--colour-primary)"
+        stopColourEnd="(--colour-secondary)"
       />
     </Link>
   </div>
