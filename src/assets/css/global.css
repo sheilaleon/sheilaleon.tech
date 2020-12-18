@@ -48,7 +48,7 @@
     @apply text-2xl mt-8 mb-4 tracking-tight;
   }
   h4 {
-    @apply text-xl mt-6 mb-4 tracking-tight;
+    @apply text-xl mt-6 mb-4;
   }
   p {
     @apply mb-6 leading-relaxed;
@@ -64,7 +64,7 @@
   }
   p a::after,
   .pages ul li a::after {
-    @apply absolute w-full left-0 border-b-2 border-primaryHover duration-150 ease-in-out;
+    @apply absolute w-full left-0 border-b-2 border-primary duration-150 ease-in-out;
     transition-property: width;
     content: '';
     bottom: -3px;
@@ -82,21 +82,22 @@
   li {
     @apply pb-2;
   }
+  ::selection {
+    background-color: var(--colour-selection-bg);
+    color: var(--colour-selection-text);
+  }
 
   /* Logo */
   .logo {
     @apply flex items-center content-center mr-auto;
   }
 
-  /* Colour Scheme */
+  /* Toggle Colour Scheme */
   .colour-mode:focus {
     @apply outline-none;
   }
   .light {
-    @apply text-accent;
-  }
-  .light:hover {
-    @apply text-accentHover;
+    @apply text-primary;
   }
   .dark {
     color: #8392b3;
@@ -105,15 +106,34 @@
     @apply text-muted;
   }
 
+  /* Scrollbar - 'cause why not */
+  body::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  body::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: var(--colour-scrollbar);
+    border-radius: 16px;
+    border: 6px solid var(--colour-bg);
+  }
+  /* For Firefox... */
+  * {
+    scrollbar-color: var(--colour-scrollbar) var(--colour-bg);
+  }
+
   /* Nav & Social Links */
   .navigation {
     @apply flex items-center justify-between;
   }
   .nav-links {
-    @apply flex justify-end content-center mr-3;
+    @apply flex justify-end content-center leading-relaxed mr-3;
   }
   .nav-links a.active::after {
-    @apply absolute w-full left-0 border-b-2 border-primaryHover transition-colors duration-150 ease-in-out;
+    @apply absolute w-full left-0 border-b-2 border-primary transition-colors duration-150 ease-in-out;
     content: '';
     bottom: 2px;
     z-index: -10;
@@ -128,7 +148,7 @@
     @apply text-linkHover;
   }
   .nav-links a::after {
-    @apply absolute w-0 left-0 border-b-2 border-primaryHover transition-all duration-150 ease-in-out;
+    @apply absolute w-0 left-0 border-b-2 border-primary transition-all duration-150 ease-in-out;
     content: '';
     bottom: 2px;
     z-index: -10;
@@ -148,6 +168,8 @@
   .social-icon:hover {
     @apply text-mutedHover;
   }
+
+  /* Hero Section */
   .hero h1 {
     @apply pb-2 leading-tight text-3xl tracking-normal;
   }
@@ -158,6 +180,7 @@
     @apply text-xs mt-0;
   }
 
+  /* Projects */
   .project-list {
     @apply grid grid-cols-1 gap-16;
   }
@@ -174,7 +197,7 @@
     @apply text-linkHover;
   }
   .project h4 a::after {
-    @apply absolute w-0 left-0 border-b-2 border-primaryHover transition-all duration-150 ease-in-out;
+    @apply absolute w-0 left-0 border-b-2 border-primary transition-all duration-150 ease-in-out;
     content: '';
     bottom: -2px;
     z-index: -10;
@@ -211,7 +234,7 @@
     @apply ml-1 text-xs relative transition-all duration-300 leading-snug;
   }
   a.preview-link span::after {
-    @apply absolute w-0 left-0 border-b-2 border-primaryHover transition-all duration-150 ease-in-out;
+    @apply absolute w-0 left-0 border-b-2 border-primary transition-all duration-150 ease-in-out;
     content: '';
     bottom: -1px;
     z-index: -10;
@@ -220,6 +243,8 @@
   a.preview-link span:focus::after {
     @apply w-full;
   }
+
+  /* The Garden Section */
   .garden-list {
     @apply list-none pl-0;
   }
@@ -233,7 +258,7 @@
     @apply inline-block relative;
   }
   a.garden-link > span::after {
-    @apply absolute w-0 left-0 bottom-0 border-b-2 border-primaryHover transition-all duration-150 ease-in-out;
+    @apply absolute w-0 left-0 bottom-0 border-b-2 border-primary transition-all duration-150 ease-in-out;
     content: '';
     z-index: -10;
   }
@@ -244,6 +269,7 @@
     @apply relative font-semibold;
   }
 
+  /* Tablet & Desktop fixes */
   @screen md {
     .logo span {
       @apply block;
