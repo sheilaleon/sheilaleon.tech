@@ -8,27 +8,27 @@ description: 'What Sheila is currently up to right this minute'
 
 Since I don't actively participate in social media, this is my way of sharing and documenting publicly what I've been up to.
 \
-<span class="info">Last updated: 2020-12-15 14:25:11.</span>
+<span class="info">Last updated: 2021-01-14 07:50:22.</span>
 
 <div class="two-col">
 
 ## 🎯 Currently I'm focusing on:
 
-- Morning yoga and jogging routine
-- Applying for my Australian Citizenship
-- Staying sane during the holidays
+- New role at superchoice.com.au
+- Bullet Journal cause 2020 was a write off
 
 ## 👩🏽‍🎓 Personal Development:
 
-- FullStack Open 2020: I probably won't finish it in time, but here's hoping. [Link to submission repo](https://github.com/sheilaleon/fullstack-open-2020)
-- Familiarising myself with Angular for the new year.
+- FullStack Open 2020: [Link to submission repo](https://github.com/sheilaleon/fullstack-open-2020)
 
 ## 📚 Reading:
 
-- [The Flight of the Eisenstein](https://www.goodreads.com/book/show/80155.The_Flight_of_the_Eisenstein)
+- [A Promised Land - Barak Obama](https://www.goodreads.com/book/show/55361205-a-promised-land)
+- [Islands of Mercy - Rose Tremain](https://www.goodreads.com/book/show/52030135-islands-of-mercy)
 
 ### Recently finished:
 
+- [The Flight of the Eisenstein](https://www.goodreads.com/book/show/80155.The_Flight_of_the_Eisenstein)
 - [HBR's 10 Must Reads on Negotiation](https://www.goodreads.com/book/show/42943661-hbr-s-10-must-reads-on-negotiation)
 - [The World of Critical Role](https://www.goodreads.com/book/show/49757384-the-world-of-critical-role)
 - [The Priory of the Orange Tree](https://www.goodreads.com/book/show/40275288-the-priory-of-the-orange-tree)
@@ -36,23 +36,23 @@ Since I don't actively participate in social media, this is my way of sharing an
 ## 📺 Watching:
 
 - Critical Role, campaign 2
-- Narrative Telephone, season 2
-- Talks Machina
-- Euphoria
+- The Expanse
+- The Curse of Oak Island (STILL. Why, I don't know)
 
 ### Recently finished:
 
-- The Crown
-- Formula 1, what sports to watch now 😭
+- Star Trek: Discovery
+- 2021 PDC World Darts Championship
+
 ## 🎧 Listening:
 
 - [Syntax Podcast](https://syntax.fm/)
 - [Front End Happy Hour](https://frontendhappyhour.com/)
-- [To Boldly Watch Podcast](https://goodtimesociety.podbean.com/)
 
 ## 🎮 Playing:
 
 - Shop Heroes
+- Hades
 - Dirt Rally 2.0 in VR
 - American Truck Simulator in VR
 - Real VR Fishing 'Together Edition' - LOVING THIS! I have Plex running within the game so I can listen or watch my pile of shame while playing/fishing.
