@@ -15,7 +15,7 @@ Since I don't actively participate in social media, this is my way of sharing an
 ## 🎯 Currently I'm focusing on:
 
 - New role at superchoice.com.au
-- Bullet Journal cause 2020 was a write off
+- Meditation and getting in at least 2 hours worth a day
 
 ## 👩🏽‍🎓 Personal Development:
 
@@ -23,26 +23,25 @@ Since I don't actively participate in social media, this is my way of sharing an
 
 ## 📚 Reading:
 
-- [A Promised Land - Barak Obama](https://www.goodreads.com/book/show/55361205-a-promised-land)
+- [Harrow the Ninth - Tamsyn Muir](https://www.goodreads.com/book/show/39325105-harrow-the-ninth)
 - [Islands of Mercy - Rose Tremain](https://www.goodreads.com/book/show/52030135-islands-of-mercy)
+- [A Promised Land - Barak Obama](https://www.goodreads.com/book/show/55361205-a-promised-land)
 
 ### Recently finished:
 
-- [The Flight of the Eisenstein](https://www.goodreads.com/book/show/80155.The_Flight_of_the_Eisenstein)
-- [HBR's 10 Must Reads on Negotiation](https://www.goodreads.com/book/show/42943661-hbr-s-10-must-reads-on-negotiation)
-- [The World of Critical Role](https://www.goodreads.com/book/show/49757384-the-world-of-critical-role)
-- [The Priory of the Orange Tree](https://www.goodreads.com/book/show/40275288-the-priory-of-the-orange-tree)
+- [Gideon the Ninth - Tamsyn Muir](https://www.goodreads.com/book/show/42036538-gideon-the-ninth)
 
 ## 📺 Watching:
 
 - Critical Role, campaign 2
-- The Expanse
-- The Curse of Oak Island (STILL. Why, I don't know)
+- The Curse of Oak Island (STILL. Why I don't know)
+- Carmen Sandiego
+- Star Trek - Lower Decks
+- NBA, Lakers
 
 ### Recently finished:
 
-- Star Trek: Discovery
-- 2021 PDC World Darts Championship
+- The Expanse
 
 ## 🎧 Listening:
 
@@ -53,9 +52,6 @@ Since I don't actively participate in social media, this is my way of sharing an
 
 - Shop Heroes
 - Hades
-- Dirt Rally 2.0 in VR
-- American Truck Simulator in VR
-- Real VR Fishing 'Together Edition' - LOVING THIS! I have Plex running within the game so I can listen or watch my pile of shame while playing/fishing.
 
 </div>
 
