@@ -14,7 +14,7 @@ Since I don't actively participate in social media, this is my way of sharing an
 
 ## 🎯 Currently I'm focusing on:
 
-- My dog Illy. She's recently been diagnoised with Lliver cancer that has spread to her lungs. We caught it too late since we only thought she was having difficulties with her heart disease. She's also 16 years old, so spending what days I have left with her is my priority.
+- My dog Illy. She's recently been diagnoised with liver cancer that has spread to her lungs. We caught it too late since we only thought she was having difficulties with her heart disease. She's also 16 years old, so spending what days I have left with her is my priority.
 - Ensuring I'm sticking to my work/life balance standards.
 - When moon? 🦍💎✋🏼🚀
 
@@ -51,7 +51,7 @@ Since I don't actively participate in social media, this is my way of sharing an
 
 ## 🎧 Listening:
 
-- [Syntax Podcast](https://syntax.fm/
+- [Syntax Podcast](https://syntax.fm/)
 - Blue Note Records Artists - like allll of them in no particular order
 
 ## 🎮 Playing:
