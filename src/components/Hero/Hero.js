@@ -6,10 +6,7 @@ const Hero = () => (
     <p className="greetings">
       👋🏼 Heyas<em>!</em>
     </p>
-    <h1>
-      I'm Sheila, a self-taught Frontend Developer based out of Sydney,
-      Australia.
-    </h1>
+    <h1>I'm Sheila, a Frontend Developer based out of Sydney, Australia.</h1>
     <p>
       With over a decade of industry experience, I specialise in user
       interfaces, customer experience, visual design and product strategy.
