@@ -16,7 +16,7 @@ She's worn many hats to propel her employer's business forward. Her hats include
 
 Known as the "handywoman" amongst her friends and colleagues, her peers voted her to win back to back "The Duct Tape Award" and "The MacGyver Award" awards at Zanui for being able to fix just about anything.
 
-At this moment she's continuing her studies with learning Frontend development and focusing primarily on React Testing Library.
+At this moment she's continuing her studies with learning Frontend development and focusing primarily Accessibility Development and Testing.
 
 ## Personal
 
