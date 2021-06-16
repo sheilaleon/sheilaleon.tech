@@ -8,7 +8,7 @@ description: 'What Sheila is currently up to right this minute'
 
 Since I don't actively participate in social media, this is my way of sharing and documenting publicly what I've been up to.
 \
-<span class="info">Last updated: 2021-07-08 12:08:21.</span>
+<span class="info">Last updated: 2021-06-16 18:31:47.</span>
 
 <div class="two-col">
 
@@ -35,17 +35,14 @@ Since I don't actively participate in social media, this is my way of sharing an
 ## 📺 Watching:
 
 - F1
-- Dodgers games
+- Dodgers baseball #itfdb
+- One Piece, dropped it back in 2017 and now it's time to catch up.
 - Castlevania Season 3
-- Amphibia
 - Mythic Quest
 
 ### Recently finished:
 
-- Shadow and Bone
-- DOTA: Dragon's Blood
-- Formula 1: Drive to Survive Season 3
-- Pacific Rim: The Black
+- Amphibia
 
 ## 🎧 Listening:
 
@@ -53,7 +50,8 @@ Since I don't actively participate in social media, this is my way of sharing an
 
 ## 🎮 Playing:
 
-- Monster Hunter Rise
+- Pokémon: Let's Go, Eevee!
+- CyberCode Online
 - Shop Heroes
 
 </div>
