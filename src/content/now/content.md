@@ -8,7 +8,7 @@ description: 'What Sheila is currently up to right this minute'
 
 Since I don't actively participate in social media, this is my way of sharing and documenting publicly what I've been up to.
 \
-<span class="info">Last updated: 2021-08-11 20:55:13</span>
+<span class="info">Last updated: 2021-09-05 21:52:33</span>
 
 <div class="two-col">
 
@@ -19,18 +19,20 @@ Since I don't actively participate in social media, this is my way of sharing an
 
 ## 👩🏽‍🎓 Personal Development:
 
-- A bit of Frontend Masters and Newline learning here and there.
+- Scrimba and newline.co learning
+- Sparking Joy in during this Sydney Lockdown period
 
 ## 📚 Reading:
 
-- [A Promised Land - Barak Obama](https://www.goodreads.com/book/show/55361205-a-promised-land)
+- [The Power of Less - Leo Babauta](https://www.goodreads.com/book/show/3467088-the-power-of-**less**)
 - [The Galaxy, and the Ground Within - Becky Chambers](https://www.goodreads.com/book/show/50209317-the-galaxy-and-the-ground-within)
 
 ### Recently finished:
 
-- [The Long Way to a Small, Angry Planet - Becky Chambers](https://www.goodreads.com/book/show/22733729-the-long-way-to-a-small-angry-planet)
-- [A Closed and Common Orbit - Becky Chambers](https://www.goodreads.com/book/show/29475447-a-closed-and-common-orbit)
-- [Record of a Spaceborn Few - Becky Chambers](https://www.goodreads.com/book/show/32802595-record-of-a-spaceborn-few) (I cried with this one, oh so good.)
+- [A Promised Land - Barak Obama](https://www.goodreads.com/book/show/55361205-a-promised-land)
+- [Spark Joy - Marie Kondo](https://www.goodreads.com/book/show/25614984-spark-joy)
+- [Un-cook Yourself - Nat's What I Reckon](https://www.goodreads.com/book/show/55506053-un-cook-yourself)
+- [Technically Faking - Robin Hale](https://www.goodreads.com/book/show/52145900-technically-faking)
 
 [My GoodReads Profile](https://www.goodreads.com/user/show/13822666-sheila-l)
 
@@ -38,14 +40,13 @@ Since I don't actively participate in social media, this is my way of sharing an
 
 - F1
 - Dodgers baseball #itfdb
-- The Owl House
+-
 
 ### Recently finished/caught up:
 
-- Amphibia
-- One Piece, dropped it back in 2017 and now it's time to catch up.
-- Castlevania
-- Mythic Quest
+- The Owl House
+- Vivy: Fluorite Eye's Song
+- The Witcher: Nightmare of the Wolf
 
 ## 🎧 Listening:
 
@@ -55,9 +56,9 @@ Since I don't actively participate in social media, this is my way of sharing an
 
 ## 🎮 Playing:
 
-- Yakuza: Like a Dragon
-- Forza Horizon 4
+- F1 2019
 - Dirt Rally 2.0
+- Microsoft Solitaire Collection!!
 
 </div>
 
