@@ -10,7 +10,7 @@ const Layout = ({ pageTitle, gardenDescription, children }) => {
   const { title } = useSiteMetadata();
 
   return (
-    <>
+    <div className="container">
       <SEO
         pageTitle={pageTitle ? `${pageTitle}` : null}
         gardenDescription={gardenDescription ? `${gardenDescription}` : null}
@@ -18,6 +18,7 @@ const Layout = ({ pageTitle, gardenDescription, children }) => {
       <Header />
       <AnimatePresence exitBeforeEnter>
         <motion.main
+          // className="container"
           key="main"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -28,7 +29,7 @@ const Layout = ({ pageTitle, gardenDescription, children }) => {
         </motion.main>
       </AnimatePresence>
       <Footer title={title} />
-    </>
+    </div>
   );
 };
 

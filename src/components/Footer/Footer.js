@@ -2,9 +2,11 @@ import React from 'react';
 
 const Footer = ({ title }) => (
   <footer>
-    <span className="text-sm">
-      © {new Date().getFullYear()} {title}
-    </span>
+    <section>
+      <span className="text-sm">
+        © {new Date().getFullYear()} {title}
+      </span>
+    </section>
   </footer>
 );
 

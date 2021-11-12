@@ -12,11 +12,11 @@
   header,
   main,
   footer {
-    @apply w-full max-w-4xl flex mx-auto px-12;
+    @apply w-full flex mx-auto px-12;
   }
   header,
   footer {
-    @apply items-center justify-between h-full py-12;
+    @apply items-center justify-between h-full py-8;
   }
   main {
     @apply grid min-h-full mb-auto py-6;
@@ -24,7 +24,7 @@
     grid-template-columns: 100%;
   }
   section {
-    @apply pt-4;
+    @apply p-6;
   }
 
   /* Typography */
@@ -125,12 +125,13 @@
     scrollbar-color: var(--colour-scrollbar) var(--colour-bg);
   }
 
-  /* Nav & Social Links */
+  /* Header */
+  .header-content,
   .navigation {
-    @apply flex items-center justify-between;
+    @apply flex items-center justify-between relative;
   }
   .nav-links {
-    @apply flex justify-end content-center leading-relaxed mr-3;
+    @apply flex justify-end content-center list-none leading-relaxed;
   }
   .nav-links a.active::after {
     @apply absolute w-full left-0 border-b-2 border-primary transition-colors duration-150 ease-in-out;
@@ -156,6 +157,48 @@
   .nav-links a:hover::after {
     @apply w-full;
   }
+  button#ico-menu {
+    @apply inline-flex relative items-center text-sm font-medium;
+    width: 50px;
+    height: 50px;
+    transform: translateZ(0);
+    transition: top 0.28s ease-out, color 0.1s ease-out;
+  }
+  button#ico-menu > span {
+    @apply absolute top-0;
+    width: 48px;
+    height: 48px;
+    right: 100%;
+    line-height: 32px;
+    transition: all 0.16s ease-out;
+  }
+  button#ico-menu {
+    @apply flex justify-center align-middle;
+  }
+  button#ico-menu::before,
+  button#ico-menu::after {
+    @apply bg-default absolute overflow-hidden;
+    content: '';
+    width: 24px;
+    height: 2px;
+    border-radius: 2px;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out,
+      background 0.2s ease-out;
+  }
+  button#ico-menu::before {
+    transform: translateY(-6px);
+  }
+  button#ico-menu::after {
+    transform: translateY(4px);
+  }
+  button#ico-menu.open::before {
+    transform: rotate(45deg);
+  }
+  button#ico-menu.open::after {
+    transform: rotate(-45deg);
+  }
+
+  /* Social Links */
   .social-icons {
     @apply flex items-center justify-around;
   }

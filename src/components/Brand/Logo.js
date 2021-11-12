@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 const Logo = ({ stopColourStart, stopColourEnd }) => (
   <motion.svg
     key="logo"
-    width="36"
-    height="36"
+    width="40"
+    height="40"
     viewBox="0 0 40 40"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

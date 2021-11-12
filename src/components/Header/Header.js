@@ -9,24 +9,31 @@ const Header = () => {
   const { title, navigationLinks } = useSiteMetadata();
   return (
     <header>
-      <Brand title={title} />
-      <nav className="navigation">
-        <div className="nav-links">
-          {navigationLinks &&
-            navigationLinks.map((link) => (
-              <Link
-                key={link.label}
-                to={link.link}
-                title={link.label}
-                activeClassName="active"
-                partiallyActive
-              >
-                {link.label}
-              </Link>
-            ))}
-        </div>
-        <ToggleColourScheme className="colour-mode" />
-      </nav>
+      <section>
+        <Brand title={title} />
+        <nav className="navigation">
+          <ul className="nav-links">
+            {navigationLinks &&
+              navigationLinks.map((link) => (
+                <li>
+                  <Link
+                    key={link.label}
+                    to={link.link}
+                    title={link.label}
+                    activeClassName="active"
+                    partiallyActive
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+          </ul>
+          <ToggleColourScheme className="colour-mode" />
+          <button id="ico-menu" className="open" type="button">
+            <span>Menu</span>
+          </button>
+        </nav>
+      </section>
     </header>
   );
 };
